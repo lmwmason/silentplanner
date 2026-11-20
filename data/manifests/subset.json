@@ -1,0 +1,2016 @@
+{
+  "version": "1.1.0",
+  "doi": "10.5281/zenodo.23613504",
+  "license": "CC-BY-4.0",
+  "url": "https://zenodo.org/records/23613504/files/UAV_Acoustic_Dataset_v1.1.0_Data_and_Experiments_compressed.zip",
+  "publisher_full_archive_sha256": "938de69c4b3631b70519e3f2a759f7161f781d5022a11c1c33be8836532648df",
+  "metadata_sha256": {
+    "recordings": "843872c34c583ee3317986e52a02462db38e4b38f46eda0689029ba0f64a51b3",
+    "files": "24b56a55c40acf1b456a5fa433093b51b16d98d82cb9357eb3d494e1e0926b22",
+    "sessions": "b4f5d8b151c00f1bb5abbb3748399b3f16dec8bef8aa9804757267c5611c6f2e"
+  },
+  "members": [
+    {
+      "recording_id": "rec-20260425-0001",
+      "member": "dataset/data/real_uav/ses-undated-01/rec-20260425-0001/rec-20260425-0001__ch-00.wav",
+      "sha256": "0fa52b4bcf40da6d7228a3a3a788b302a3d0bceaf984d5aac3b3ea7aeccb4a21",
+      "bytes": 11997228,
+      "range": [
+        4580909222,
+        4587426365
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0002",
+      "member": "dataset/data/real_uav/ses-undated-02/rec-20260425-0002/rec-20260425-0002__ch-00.wav",
+      "sha256": "3c670613ea92ddde0caca647a79222d2e0e37f67433e69720280bf2b42e7fcfd",
+      "bytes": 13991980,
+      "range": [
+        4685901034,
+        4693242997
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0003",
+      "member": "dataset/data/real_uav/ses-undated-03/rec-20260425-0003/rec-20260425-0003__ch-00.wav",
+      "sha256": "b9d1fc8aa16148757ec4050e31d3d637ed7c8191fd5d9c0df81c1164ebb32232",
+      "bytes": 10670124,
+      "range": [
+        4804555363,
+        4809824108
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0004",
+      "member": "dataset/data/real_uav/ses-undated-04/rec-20260425-0004/rec-20260425-0004__ch-00.wav",
+      "sha256": "bb102f35b777b2caf90fd20f66202bc992688d1199b11efe1590a1fdd315103d",
+      "bytes": 7749676,
+      "range": [
+        4888496083,
+        4893762257
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0005",
+      "member": "dataset/data/real_uav/ses-undated-05/rec-20260425-0005/rec-20260425-0005__ch-00.wav",
+      "sha256": "7268928bde83d77a452b761923601883d26316ea383e4d598533c0747535f513",
+      "bytes": 7143468,
+      "range": [
+        4970527330,
+        4974272580
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0006",
+      "member": "dataset/data/real_uav/ses-undated-06/rec-20260425-0006/rec-20260425-0006__ch-00.wav",
+      "sha256": "4a234e42c3609ab08e18d195934b6711e900b25553526bf5bc5390a7cb0df423",
+      "bytes": 12017708,
+      "range": [
+        5030609811,
+        5036627769
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0007",
+      "member": "dataset/data/real_uav/ses-undated-07/rec-20260425-0007/rec-20260425-0007__ch-00.wav",
+      "sha256": "713cb7a562dd4b6330e19c4b833ef80b4d5435c204e1516f8f45efe9de3459c4",
+      "bytes": 10534956,
+      "range": [
+        5126282920,
+        5131707048
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0008",
+      "member": "dataset/data/real_uav/ses-undated-08/rec-20260425-0008/rec-20260425-0008__ch-00.wav",
+      "sha256": "a6bf0d76f31fd9874e1c337701089c29c63f8fa63b115d2529e01da0f001b23a",
+      "bytes": 12365868,
+      "range": [
+        5211779050,
+        5218761473
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0009",
+      "member": "dataset/data/real_uav/ses-undated-09/rec-20260425-0009/rec-20260425-0009__ch-00.wav",
+      "sha256": "574e4d240a9c3260a5a718986d922804aa57d1c6e50636ba2e4eceb222c01d6c",
+      "bytes": 6647852,
+      "range": [
+        5322057986,
+        5324730732
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0010",
+      "member": "dataset/data/real_uav/ses-undated-10/rec-20260425-0010/rec-20260425-0010__ch-00.wav",
+      "sha256": "a6dfeb0cc610036fd6c6165db0b0fb7ef84a57cfeb148b85f8be2aa953ffe340",
+      "bytes": 7094316,
+      "range": [
+        5365638563,
+        5368671250
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0011",
+      "member": "dataset/data/real_uav/ses-undated-11/rec-20260425-0011/rec-20260425-0011__ch-00.wav",
+      "sha256": "4883e8e7796f0e7a4d9c605289abea4121a6c735fe830794cb2a075fbb9a3730",
+      "bytes": 4726828,
+      "range": [
+        6135191385,
+        6137209025
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0012",
+      "member": "dataset/data/real_uav/ses-undated-12/rec-20260425-0012/rec-20260425-0012__ch-00.wav",
+      "sha256": "0e339ef4ab925872f920c74247b96f5ead413a2914473a8500dfcaf8fd440355",
+      "bytes": 6869036,
+      "range": [
+        6802174996,
+        6805064111
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0013",
+      "member": "dataset/data/real_uav/ses-undated-13/rec-20260425-0013/rec-20260425-0013__ch-00.wav",
+      "sha256": "6cb6c294b5d92b518d8a29b80f1850600268cfcdcb8c78bead9c7fd881b8e748",
+      "bytes": 7524396,
+      "range": [
+        7595728605,
+        7599399393
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0014",
+      "member": "dataset/data/real_uav/ses-undated-14/rec-20260425-0014/rec-20260425-0014__ch-00.wav",
+      "sha256": "31e0c6df6cce9c58f906a17ff020e35e044c09b0863bde1e6d567345b08d7622",
+      "bytes": 9170988,
+      "range": [
+        8456159765,
+        8461519833
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0015",
+      "member": "dataset/data/real_uav/ses-undated-15/rec-20260425-0015/rec-20260425-0015__ch-00.wav",
+      "sha256": "13d626e1dc38c83a98a3160c54ebf7e4c50591285b369b830c96eba016c9ff30",
+      "bytes": 12165164,
+      "range": [
+        9377688507,
+        9383903106
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0016",
+      "member": "dataset/data/real_uav/ses-undated-16/rec-20260425-0016/rec-20260425-0016__ch-00.wav",
+      "sha256": "d737a2dd462bcb5bf3699512e7457074462c6c23cb6098d16f6be83416c7a093",
+      "bytes": 4612140,
+      "range": [
+        10317106224,
+        10318867977
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0017",
+      "member": "dataset/data/real_uav/ses-undated-17/rec-20260425-0017/rec-20260425-0017__ch-00.wav",
+      "sha256": "b26aa49a93be256e1b1442dc5ad3e3f62722f56d908130e8fc13ef3fd511368b",
+      "bytes": 6922284,
+      "range": [
+        11219421332,
+        11223702188
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0018",
+      "member": "dataset/data/real_uav/ses-undated-18/rec-20260425-0018/rec-20260425-0018__ch-00.wav",
+      "sha256": "a3e22f37da1743509aaadafebb7560c07cc11067fb0387f885771c2a9d43f560",
+      "bytes": 6615084,
+      "range": [
+        12148647079,
+        12152607953
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0019",
+      "member": "dataset/data/real_uav/ses-undated-19/rec-20260425-0019/rec-20260425-0019__ch-00.wav",
+      "sha256": "38c972d9e70903b26a045811e091faffc02453f420824b18a6b1cb4236a1ef90",
+      "bytes": 5447724,
+      "range": [
+        13042423130,
+        13046050714
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0020",
+      "member": "dataset/data/real_uav/ses-undated-20/rec-20260425-0020/rec-20260425-0020__ch-00.wav",
+      "sha256": "f7ff69cd7d6936472afa2401bbee456f82edc31c9acac646549ad29b9e90b6f1",
+      "bytes": 8671276,
+      "range": [
+        13924637416,
+        13929407205
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0021",
+      "member": "dataset/data/real_uav/ses-undated-21/rec-20260425-0021/rec-20260425-0021__ch-00.wav",
+      "sha256": "e77bfe25476c8f498c0429eb74b17c08f2585bedb52b8f81eb68dc4c149e910f",
+      "bytes": 8249388,
+      "range": [
+        14097285584,
+        14100427880
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0022",
+      "member": "dataset/data/real_uav/ses-undated-22/rec-20260425-0022/rec-20260425-0022__ch-00.wav",
+      "sha256": "7890c364cbeccb6d52ccd1d144fb13cf0f06208b315081bd933f711fcb9f82ed",
+      "bytes": 6680620,
+      "range": [
+        14147878720,
+        14151581895
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0023",
+      "member": "dataset/data/real_uav/ses-undated-23/rec-20260425-0023/rec-20260425-0023__ch-00.wav",
+      "sha256": "971b5998ab87ed9525c1df2d7267e6d3f8d87e87fb48ab75068f521ed1e24d83",
+      "bytes": 11698220,
+      "range": [
+        14205267116,
+        14211238600
+      ]
+    },
+    {
+      "recording_id": "rec-20260425-0024",
+      "member": "dataset/data/real_uav/ses-undated-24/rec-20260425-0024/rec-20260425-0024__ch-00.wav",
+      "sha256": "85579eb1cb22fa6b02188347d265fc2387856765e5c53295e5eb240267acbe86",
+      "bytes": 10633260,
+      "range": [
+        14298060248,
+        14303196511
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0001",
+      "member": "dataset/data/real_uav/ses-undated-25/rec-20260427-0001/rec-20260427-0001__ch-00.wav",
+      "sha256": "7b7359ff3c17535657304f9fab626634760ef7d69e167fc71eabe4aa5c2e11ee",
+      "bytes": 6512684,
+      "range": [
+        14377114202,
+        14380413770
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0002",
+      "member": "dataset/data/real_uav/ses-undated-26/rec-20260427-0002/rec-20260427-0002__ch-00.wav",
+      "sha256": "69e6382718ef96823afd9dde3e60ef269e557ea059ea0c473c9cd07a7ff6569e",
+      "bytes": 8376364,
+      "range": [
+        14429986544,
+        14434290524
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0003",
+      "member": "dataset/data/real_uav/ses-undated-27/rec-20260427-0003/rec-20260427-0003__ch-00.wav",
+      "sha256": "c22df459c345deaf7ac6162d1db53745c24ef798da2077e0c261b300425a5926",
+      "bytes": 9289772,
+      "range": [
+        14498856348,
+        14503150398
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0004",
+      "member": "dataset/data/real_uav/ses-undated-28/rec-20260427-0004/rec-20260427-0004__ch-00.wav",
+      "sha256": "ca2f4676db333752e2ebea356f7ebe4cf1dd6a4412931d4df34fb9a1aeb0e326",
+      "bytes": 8290348,
+      "range": [
+        14568177331,
+        14572433577
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0005",
+      "member": "dataset/data/real_uav/ses-undated-29/rec-20260427-0005/rec-20260427-0005__ch-00.wav",
+      "sha256": "41c71f657b51b5638f26e037b97916d9e27b87a63493143a045af2d680fcd702",
+      "bytes": 8732716,
+      "range": [
+        14635821670,
+        14639665324
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0006",
+      "member": "dataset/data/real_uav/ses-undated-30/rec-20260427-0006/rec-20260427-0006__ch-00.wav",
+      "sha256": "ceb930e56abb0a40cc550db7d9359374d309f04c883aedd07285f2c3a761856b",
+      "bytes": 7213100,
+      "range": [
+        14697485000,
+        14700770143
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0007",
+      "member": "dataset/data/real_uav/ses-undated-31/rec-20260427-0007/rec-20260427-0007__ch-00.wav",
+      "sha256": "d4ae8231d2c4f786bb5ea4175a04e7345c00d9f5e9e34b7e293ee2e9eddcf154",
+      "bytes": 8966188,
+      "range": [
+        14749936974,
+        14753886647
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0008",
+      "member": "dataset/data/real_uav/ses-undated-32/rec-20260427-0008/rec-20260427-0008__ch-00.wav",
+      "sha256": "98fcb44ef4774b6ef8b6897ef7062ae7505e8d4ef69e9d8a3da7e5ed9f42f320",
+      "bytes": 7401516,
+      "range": [
+        14813711457,
+        14816892493
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0009",
+      "member": "dataset/data/real_uav/ses-undated-33/rec-20260427-0009/rec-20260427-0009__ch-00.wav",
+      "sha256": "84722c5d53f654da4febf0c0fa26ee1adde0ea9f1971d186e0d0f7adeb593af3",
+      "bytes": 10043436,
+      "range": [
+        14864996504,
+        14869034914
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0010",
+      "member": "dataset/data/real_uav/ses-undated-34/rec-20260427-0010/rec-20260427-0010__ch-00.wav",
+      "sha256": "d6f95884138b8834f001a888e0cfd328fa72511a1665508778fc73280dea29e8",
+      "bytes": 10260524,
+      "range": [
+        14930210353,
+        14934635630
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0011",
+      "member": "dataset/data/real_uav/ses-undated-35/rec-20260427-0011/rec-20260427-0011__ch-00.wav",
+      "sha256": "b08a7f445771432d1cfa383bbdbc1e9c06bbc6d2fb39c742707600b4092abaad",
+      "bytes": 8241196,
+      "range": [
+        15002354450,
+        15005875929
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0012",
+      "member": "dataset/data/real_uav/ses-undated-36/rec-20260427-0012/rec-20260427-0012__ch-00.wav",
+      "sha256": "dc05b3cffcc56b6393c0ecdc1a960f763b7c1a93220af3411ef83c5834dcee21",
+      "bytes": 16539692,
+      "range": [
+        15059299580,
+        15065687071
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0013",
+      "member": "dataset/data/real_uav/ses-undated-37/rec-20260427-0013/rec-20260427-0013__ch-00.wav",
+      "sha256": "4ca67ff0cabc4ab7de55ac7fc7734e9cdb51685621c4965c4b6d0dda013af4dc",
+      "bytes": 9265196,
+      "range": [
+        15163273925,
+        15167949012
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0014",
+      "member": "dataset/data/real_uav/ses-undated-38/rec-20260427-0014/rec-20260427-0014__ch-00.wav",
+      "sha256": "a4e09d81c156321132c7631fc8b6903d2205ebd759733dea30f787ddd0d1a9e9",
+      "bytes": 5152812,
+      "range": [
+        15239977672,
+        15242247749
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0015",
+      "member": "dataset/data/real_uav/ses-undated-39/rec-20260427-0015/rec-20260427-0015__ch-00.wav",
+      "sha256": "9b3f9864727dccbf3373b0ccffe0caaf59ca374a8d538b3cfbd64360f569382a",
+      "bytes": 9814060,
+      "range": [
+        15275983866,
+        15281048574
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0016",
+      "member": "dataset/data/real_uav/ses-undated-40/rec-20260427-0016/rec-20260427-0016__ch-00.wav",
+      "sha256": "b32fafc338cf698ca25eb2987b3b73edea68ec1cc474b1054e965ffedaddb18a",
+      "bytes": 9396268,
+      "range": [
+        15356096708,
+        15360305919
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0017",
+      "member": "dataset/data/real_uav/ses-undated-41/rec-20260427-0017/rec-20260427-0017__ch-00.wav",
+      "sha256": "b18ee3113d68920a5b75b017cd20029d9d28322d147c51961c919f5c51930baf",
+      "bytes": 10158124,
+      "range": [
+        15421917509,
+        15428245673
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0018",
+      "member": "dataset/data/real_uav/ses-undated-42/rec-20260427-0018/rec-20260427-0018__ch-00.wav",
+      "sha256": "d575c733edf82c4cbd75ae96caf88fcde6baf12cc397e9e5e73eec882dbdd884",
+      "bytes": 9396268,
+      "range": [
+        15523395305,
+        15528839439
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0019",
+      "member": "dataset/data/real_uav/ses-undated-43/rec-20260427-0019/rec-20260427-0019__ch-00.wav",
+      "sha256": "14f4ce5fb2d1fde608e22bd0ba5eacd1563b833900b611558136a570286b5bc7",
+      "bytes": 9261100,
+      "range": [
+        15609688653,
+        15615578467
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0020",
+      "member": "dataset/data/real_uav/ses-undated-44/rec-20260427-0020/rec-20260427-0020__ch-00.wav",
+      "sha256": "36ab6906fab1643a2bcef2e641517fac0c0cca69533db15a0ac10e862a11fff3",
+      "bytes": 9551916,
+      "range": [
+        15702683242,
+        15708985142
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0021",
+      "member": "dataset/data/real_uav/ses-undated-45/rec-20260427-0021/rec-20260427-0021__ch-00.wav",
+      "sha256": "242bd0b3c35c99cb14df6cf5b8f4ca150d41a64ec1eaa0211bacdde4600f029a",
+      "bytes": 9752620,
+      "range": [
+        15802031212,
+        15805780202
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0022",
+      "member": "dataset/data/real_uav/ses-undated-46/rec-20260427-0022/rec-20260427-0022__ch-00.wav",
+      "sha256": "0b862bb581422c896ec4ca10bb47234ae67bb60737c2be6cff806fbf0082f515",
+      "bytes": 9191468,
+      "range": [
+        15864718713,
+        15868302283
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0023",
+      "member": "dataset/data/real_uav/ses-undated-47/rec-20260427-0023/rec-20260427-0023__ch-00.wav",
+      "sha256": "d0e024f082ccc54b4926353608c232f720fe6c0269b89278fe325c078a7b45be",
+      "bytes": 9506860,
+      "range": [
+        15929768812,
+        15933998519
+      ]
+    },
+    {
+      "recording_id": "rec-20260427-0024",
+      "member": "dataset/data/real_uav/ses-undated-48/rec-20260427-0024/rec-20260427-0024__ch-00.wav",
+      "sha256": "49752051aeb95d335067537b82b7acddb1e8d4a2e9186516b0d8cbb4c55ad0c3",
+      "bytes": 12992556,
+      "range": [
+        15998498077,
+        16004540611
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0001",
+      "member": "dataset/data/real_uav/ses-undated-49/rec-20260513-0001/rec-20260513-0001__ch-00.wav",
+      "sha256": "23aaff2a7f3db43bf815116b05a94f1b2d43119a7c65bf1b0c75f1a05bb52f8a",
+      "bytes": 9093164,
+      "range": [
+        16102639813,
+        16107891749
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0002",
+      "member": "dataset/data/real_uav/ses-undated-50/rec-20260513-0002/rec-20260513-0002__ch-00.wav",
+      "sha256": "701982d911ca542139efb8f4b4bcaffbabac27926ad2e7e7fd3187c792f02057",
+      "bytes": 12247084,
+      "range": [
+        16187445129,
+        16193371326
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0003",
+      "member": "dataset/data/real_uav/ses-undated-51/rec-20260513-0003/rec-20260513-0003__ch-00.wav",
+      "sha256": "8b3c7bd92e246b51b577130e6ce0e1733d10a76248b8fde9eb6567b35e4a9080",
+      "bytes": 6811692,
+      "range": [
+        16283607939,
+        16286664055
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0004",
+      "member": "dataset/data/real_uav/ses-undated-52/rec-20260513-0004/rec-20260513-0004__ch-00.wav",
+      "sha256": "5a2a790fba75569bc545d58a159edebd84321674492113508ecc4c65b9b7f19a",
+      "bytes": 11628588,
+      "range": [
+        16334027994,
+        16339870901
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0005",
+      "member": "dataset/data/real_uav/ses-undated-53/rec-20260513-0005/rec-20260513-0005__ch-00.wav",
+      "sha256": "038f1949d8f779e1a30554d217d6b88e804571a6283410ef38aa9459a0f7e2f6",
+      "bytes": 11657260,
+      "range": [
+        16427758764,
+        16432479294
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0006",
+      "member": "dataset/data/real_uav/ses-undated-54/rec-20260513-0006/rec-20260513-0006__ch-00.wav",
+      "sha256": "64f6e1bc4eab94edfc84aa5d5656afa4700f351561c81c490369793aeb7a5737",
+      "bytes": 13082668,
+      "range": [
+        16505283794,
+        16511189630
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0007",
+      "member": "dataset/data/real_uav/ses-undated-55/rec-20260513-0007/rec-20260513-0007__ch-00.wav",
+      "sha256": "bda15631f28a7cd9a43fc8c48a850e173aad3f057356afd28fc88da5fe747ecf",
+      "bytes": 10305580,
+      "range": [
+        16598682683,
+        16603469790
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0008",
+      "member": "dataset/data/real_uav/ses-undated-56/rec-20260513-0008/rec-20260513-0008__ch-00.wav",
+      "sha256": "64d68b74cfeed05cf24f88397ccddc021479a9253c977c30106922df8efe062f",
+      "bytes": 10694700,
+      "range": [
+        16675908275,
+        16680612446
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0009",
+      "member": "dataset/data/real_uav/ses-undated-57/rec-20260513-0009/rec-20260513-0009__ch-00.wav",
+      "sha256": "a7c4e8c019ace858fb5a0fb429589c2f08b2861248653b391a342ee274370711",
+      "bytes": 13164588,
+      "range": [
+        16753730926,
+        16759679386
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0010",
+      "member": "dataset/data/real_uav/ses-undated-58/rec-20260513-0010/rec-20260513-0010__ch-00.wav",
+      "sha256": "9e49d63084064edcb0548eaf7546fa42d19787a8371bb993dc9459fa35f29991",
+      "bytes": 14872620,
+      "range": [
+        16854596457,
+        16861408194
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0011",
+      "member": "dataset/data/real_uav/ses-undated-59/rec-20260513-0011/rec-20260513-0011__ch-00.wav",
+      "sha256": "4fed7a271e11fe5aeb2d0949af143e7ea81459314e9303e23d0792bfd22fdaa6",
+      "bytes": 11165740,
+      "range": [
+        16970449092,
+        16975597678
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0012",
+      "member": "dataset/data/real_uav/ses-undated-60/rec-20260513-0012/rec-20260513-0012__ch-00.wav",
+      "sha256": "9dd7f58b07740483616909b6b67e2852b925d51f250ba12725e00bf1f6450fcc",
+      "bytes": 12783660,
+      "range": [
+        17058478008,
+        17063939724
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0013",
+      "member": "dataset/data/real_uav/ses-undated-61/rec-20260513-0013/rec-20260513-0013__ch-00.wav",
+      "sha256": "dc02eecdd4bd6711c0af8443ee2047cecec6378936f0c8513e9c29908f459ee6",
+      "bytes": 10932268,
+      "range": [
+        17148122096,
+        17152295526
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0014",
+      "member": "dataset/data/real_uav/ses-undated-62/rec-20260513-0014/rec-20260513-0014__ch-00.wav",
+      "sha256": "91ac3bf1002ccf78063a7888598aafce015a775bc812f207de503b42428ff630",
+      "bytes": 9752620,
+      "range": [
+        17215979141,
+        17219686618
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0015",
+      "member": "dataset/data/real_uav/ses-undated-63/rec-20260513-0015/rec-20260513-0015__ch-00.wav",
+      "sha256": "421e41f4bb1b383e569a90ea61d00738cc562d561eb8902e312a17df08e5dfbf",
+      "bytes": 10661932,
+      "range": [
+        17275734886,
+        17280175240
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0016",
+      "member": "dataset/data/real_uav/ses-undated-64/rec-20260513-0016/rec-20260513-0016__ch-00.wav",
+      "sha256": "36d80972fca12c750871f79896e6eac482103cdc9cce3ad46a9dda5f4125e608",
+      "bytes": 10547244,
+      "range": [
+        17346878281,
+        17350727843
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0017",
+      "member": "dataset/data/real_uav/ses-undated-65/rec-20260513-0017/rec-20260513-0017__ch-00.wav",
+      "sha256": "2f2d435383f79e1985f6fa87cc831b22957637fe5edcf686508733c7a1b236f9",
+      "bytes": 9707564,
+      "range": [
+        17410498897,
+        17415625642
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0018",
+      "member": "dataset/data/real_uav/ses-undated-66/rec-20260513-0018/rec-20260513-0018__ch-00.wav",
+      "sha256": "3e76b8671b29bd4ce0ccb3b699752f794ea42f4bab3265ad6d7fd867b62ed382",
+      "bytes": 9105452,
+      "range": [
+        17494185254,
+        17498373079
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0019",
+      "member": "dataset/data/real_uav/ses-undated-67/rec-20260513-0019/rec-20260513-0019__ch-00.wav",
+      "sha256": "569eb70af1bf61373c0bbe532a40bf0939ff2a064e14e644dad90e36b965c5bd",
+      "bytes": 11997228,
+      "range": [
+        17562501775,
+        17567533567
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0020",
+      "member": "dataset/data/real_uav/ses-undated-68/rec-20260513-0020/rec-20260513-0020__ch-00.wav",
+      "sha256": "f0fa23edaf311f61e3467c1b5bc0e3a3cc94e769376dbc31994b7e5f8487a07e",
+      "bytes": 11010092,
+      "range": [
+        17644695898,
+        17651105157
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0021",
+      "member": "dataset/data/real_uav/ses-undated-69/rec-20260513-0021/rec-20260513-0021__ch-00.wav",
+      "sha256": "fb54142683c8cfecc935f11deaa84c939c42e9e34863b5dc51ca508683f58b78",
+      "bytes": 9343020,
+      "range": [
+        17748553094,
+        17751889638
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0022",
+      "member": "dataset/data/real_uav/ses-undated-70/rec-20260513-0022/rec-20260513-0022__ch-00.wav",
+      "sha256": "57160dbeaa8d7fd2ec9a9b304adf7478182d989f56d580f179054053bb3b8a57",
+      "bytes": 9203756,
+      "range": [
+        17803003941,
+        17806072424
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0023",
+      "member": "dataset/data/real_uav/ses-undated-71/rec-20260513-0023/rec-20260513-0023__ch-00.wav",
+      "sha256": "ad885be0b4d7714ab556f020da389b9fac66f53434ac06125bcdf5ff84f5d724",
+      "bytes": 12595244,
+      "range": [
+        17852678725,
+        17857303663
+      ]
+    },
+    {
+      "recording_id": "rec-20260513-0024",
+      "member": "dataset/data/real_uav/ses-undated-72/rec-20260513-0024/rec-20260513-0024__ch-00.wav",
+      "sha256": "220f40da01212e99b6e9969957ce48f669712b8ea84c8c5103994bc5b1f8f9cf",
+      "bytes": 9728044,
+      "range": [
+        17927664511,
+        17931284493
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0001",
+      "member": "dataset/data/real_uav/ses-undated-73/rec-20260517-0001/rec-20260517-0001__ch-00.wav",
+      "sha256": "fc15c6b5a5b8911cd1ff6c0dcb75f0c77727d473ee4ce026410e723bb9d099e1",
+      "bytes": 9027628,
+      "range": [
+        17986445252,
+        17990581938
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0002",
+      "member": "dataset/data/real_uav/ses-undated-74/rec-20260517-0002/rec-20260517-0002__ch-00.wav",
+      "sha256": "c87a58652a89141c24fd1f1bb3575543c4b22a646934f95b0be9b51b59113f8c",
+      "bytes": 11698220,
+      "range": [
+        18054747143,
+        18060298730
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0003",
+      "member": "dataset/data/real_uav/ses-undated-75/rec-20260517-0003/rec-20260517-0003__ch-00.wav",
+      "sha256": "7d7b578ed9dde26e6f3fd481b4fcd0689f01dbac4e4ff5ea0714c6783f7efca2",
+      "bytes": 9347116,
+      "range": [
+        18145606371,
+        18150797548
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0004",
+      "member": "dataset/data/real_uav/ses-undated-76/rec-20260517-0004/rec-20260517-0004__ch-00.wav",
+      "sha256": "af2b9b0998bd209c4360bea223459dfa2657041b70210da1e1df83128cb76f89",
+      "bytes": 10399788,
+      "range": [
+        18229337394,
+        18234315033
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0005",
+      "member": "dataset/data/real_uav/ses-undated-77/rec-20260517-0005/rec-20260517-0005__ch-00.wav",
+      "sha256": "89079040eceafb181af674b4611094689b96bbe5999f7bb65d2742a6a51edb2b",
+      "bytes": 9216044,
+      "range": [
+        18310659460,
+        18314443506
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0006",
+      "member": "dataset/data/real_uav/ses-undated-78/rec-20260517-0006/rec-20260517-0006__ch-00.wav",
+      "sha256": "a381e2b4d9d3eb699fd87dfe5586e1b4864c303a8372cd61f0c8565aeb0fe71e",
+      "bytes": 8425516,
+      "range": [
+        18372974653,
+        18376571160
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0007",
+      "member": "dataset/data/real_uav/ses-undated-79/rec-20260517-0007/rec-20260517-0007__ch-00.wav",
+      "sha256": "58275f20b2b8984642b11cab9c8001051a5360845d880e3d0726d0249a3dfebe",
+      "bytes": 9125932,
+      "range": [
+        18432021914,
+        18436280663
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0008",
+      "member": "dataset/data/real_uav/ses-undated-80/rec-20260517-0008/rec-20260517-0008__ch-00.wav",
+      "sha256": "22725fc975a33756e40c746eb64abe22befbfb6b76eb4db8bdcd282bb903bbf4",
+      "bytes": 9232428,
+      "range": [
+        18500976685,
+        18505178374
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0009",
+      "member": "dataset/data/real_uav/ses-undated-81/rec-20260517-0009/rec-20260517-0009__ch-00.wav",
+      "sha256": "ca95b54fe96dad0ffe09ebfde37b6dd564e7861ea767fb11bcc23e2f8fd9cf8d",
+      "bytes": 10354732,
+      "range": [
+        18569205555,
+        18573111551
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0010",
+      "member": "dataset/data/real_uav/ses-undated-82/rec-20260517-0010/rec-20260517-0010__ch-00.wav",
+      "sha256": "bd20404b644d64f60c3fc29305a6ccdfa0c1caff5c82f62792f19f07de00651e",
+      "bytes": 8953900,
+      "range": [
+        18633601932,
+        18637714550
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0011",
+      "member": "dataset/data/real_uav/ses-undated-83/rec-20260517-0011/rec-20260517-0011__ch-00.wav",
+      "sha256": "a8b0717dd15ddd4f8fac11b87dd1beb9b02f2e0db615432fd875f5f546edd3d9",
+      "bytes": 7438380,
+      "range": [
+        18700166946,
+        18703348794
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0012",
+      "member": "dataset/data/real_uav/ses-undated-84/rec-20260517-0012/rec-20260517-0012__ch-00.wav",
+      "sha256": "a72f340f22a7247090c054e71034512c95d6ca4d9a4c6170a9e3c4767b4a7d6a",
+      "bytes": 8925228,
+      "range": [
+        18752879023,
+        18756077988
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0013",
+      "member": "dataset/data/real_uav/ses-undated-85/rec-20260517-0013/rec-20260517-0013__ch-00.wav",
+      "sha256": "92dd13ffa4dcd2017885c36b382c9cbf6f3eff0e34b96525d0cc20c6ad804aa6",
+      "bytes": 10711084,
+      "range": [
+        18804858379,
+        18809215189
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0014",
+      "member": "dataset/data/real_uav/ses-undated-86/rec-20260517-0014/rec-20260517-0014__ch-00.wav",
+      "sha256": "434f4ee32f25c5446cc570a9eeca3fdd1eea69d368090f6a2c7501c875ca323d",
+      "bytes": 9203756,
+      "range": [
+        18876152094,
+        18879793177
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0015",
+      "member": "dataset/data/real_uav/ses-undated-87/rec-20260517-0015/rec-20260517-0015__ch-00.wav",
+      "sha256": "b8b3a7d470064aa2789f25d90dab5a42f49b95b6d922b8dfdd471e0f5b5bce69",
+      "bytes": 9949228,
+      "range": [
+        18935403575,
+        18939908925
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0016",
+      "member": "dataset/data/real_uav/ses-undated-88/rec-20260517-0016/rec-20260517-0016__ch-00.wav",
+      "sha256": "6117a4f6440432a182de949833e721d3679f11e7add0c1759ac7d68e8170add4",
+      "bytes": 9232428,
+      "range": [
+        19008242644,
+        19012319912
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0017",
+      "member": "dataset/data/real_uav/ses-undated-89/rec-20260517-0017/rec-20260517-0017__ch-00.wav",
+      "sha256": "61257adf18dce571e2ffd3d8b40706d1c7cf168ac06d2b5b26b8fa4e4428febe",
+      "bytes": 9023532,
+      "range": [
+        19073465988,
+        19078323672
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0018",
+      "member": "dataset/data/real_uav/ses-undated-90/rec-20260517-0018/rec-20260517-0018__ch-00.wav",
+      "sha256": "31b3f36a717ef050e313188fc80a2dfaced8934cd94a1b229731994c3caf7a6e",
+      "bytes": 8810540,
+      "range": [
+        19152491417,
+        19157085865
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0019",
+      "member": "dataset/data/real_uav/ses-undated-91/rec-20260517-0019/rec-20260517-0019__ch-00.wav",
+      "sha256": "e74fa30364f7a995b6f1431d35f2528a4f52167f5e2aa69b88fa525addb586ff",
+      "bytes": 8613932,
+      "range": [
+        19227490137,
+        19231841851
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0020",
+      "member": "dataset/data/real_uav/ses-undated-92/rec-20260517-0020/rec-20260517-0020__ch-00.wav",
+      "sha256": "3d357d9da2605d8a60bed5529d31d5821fa4991cd50f684ae6d718a885050dcb",
+      "bytes": 8515628,
+      "range": [
+        19298441144,
+        19303226984
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0021",
+      "member": "dataset/data/real_uav/ses-undated-93/rec-20260517-0021/rec-20260517-0021__ch-00.wav",
+      "sha256": "3fb6a65815532e9f17aeed67cdc0cc131d243044cb811931b6035d67fe59bedc",
+      "bytes": 9855020,
+      "range": [
+        19375583306,
+        19378939604
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0022",
+      "member": "dataset/data/real_uav/ses-undated-94/rec-20260517-0022/rec-20260517-0022__ch-00.wav",
+      "sha256": "7b25241122cd67f710059d40d88bda064b31644d72a702a1286097eb76877165",
+      "bytes": 10174508,
+      "range": [
+        19429876754,
+        19433319309
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0023",
+      "member": "dataset/data/real_uav/ses-undated-95/rec-20260517-0023/rec-20260517-0023__ch-00.wav",
+      "sha256": "481eb167f2e2e898fd551dbd8b80f151a96afc8d6cef4bdb32635c0ba0560895",
+      "bytes": 9072684,
+      "range": [
+        19485520733,
+        19488507027
+      ]
+    },
+    {
+      "recording_id": "rec-20260517-0024",
+      "member": "dataset/data/real_uav/ses-undated-96/rec-20260517-0024/rec-20260517-0024__ch-00.wav",
+      "sha256": "897173005de3fc83593612de1b75a051b3be42c8c0b9bb7abf139ee41f0053f9",
+      "bytes": 10879020,
+      "range": [
+        19533865625,
+        19537323941
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0001",
+      "member": "dataset/data/real_uav/ses-undated-97/rec-20260522-0001/rec-20260522-0001__ch-00.wav",
+      "sha256": "4939fa4e85e02e981654bfa6f52aedac7def7f92c10a775adb3902343526806e",
+      "bytes": 9797676,
+      "range": [
+        19589679533,
+        19594663620
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0002",
+      "member": "dataset/data/real_uav/ses-undated-98/rec-20260522-0002/rec-20260522-0002__ch-00.wav",
+      "sha256": "41397a05a7c040bf1ad961078ef50b437a63dd2a3ac6795658e452d6c19a6ca9",
+      "bytes": 8732716,
+      "range": [
+        19670366644,
+        19674725233
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0003",
+      "member": "dataset/data/real_uav/ses-undated-99/rec-20260522-0003/rec-20260522-0003__ch-00.wav",
+      "sha256": "218d67a86c25b8a54308d3425532d32d77db9a97093a2d191991fb20b6439e33",
+      "bytes": 10084396,
+      "range": [
+        19741302555,
+        19746150847
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0004",
+      "member": "dataset/data/real_uav/ses-undated-100/rec-20260522-0004/rec-20260522-0004__ch-00.wav",
+      "sha256": "a7e2f1814bdaa254e7388f4d5b9e43e5e09bdccb4ac47058304e0ac34db075cd",
+      "bytes": 8679468,
+      "range": [
+        5415464603,
+        5420068350
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0005",
+      "member": "dataset/data/real_uav/ses-undated-101/rec-20260522-0005/rec-20260522-0005__ch-00.wav",
+      "sha256": "cdf6e7f2504eeb832317a166b6b01fb3411617aec39c866dddce8bff764acd10",
+      "bytes": 9498668,
+      "range": [
+        5492352647,
+        5496771972
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0006",
+      "member": "dataset/data/real_uav/ses-undated-102/rec-20260522-0006/rec-20260522-0006__ch-00.wav",
+      "sha256": "f0718b452961a59e95919282ee31f3fe2b7b5f54ab5a36186649df127c2c55bf",
+      "bytes": 10440748,
+      "range": [
+        5564452929,
+        5570051914
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0007",
+      "member": "dataset/data/real_uav/ses-undated-103/rec-20260522-0007/rec-20260522-0007__ch-00.wav",
+      "sha256": "bbe789ee267cba054405e5e1bd8087056803299ae8bc5f5aca031494d5eeb4fb",
+      "bytes": 10743852,
+      "range": [
+        5656245511,
+        5661265037
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0008",
+      "member": "dataset/data/real_uav/ses-undated-104/rec-20260522-0008/rec-20260522-0008__ch-00.wav",
+      "sha256": "7f70cff32c2b112c33230762bfee657b01a0cac2de97619b81f1d95a6a5fc3ae",
+      "bytes": 11411500,
+      "range": [
+        5736800058,
+        5742294749
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0009",
+      "member": "dataset/data/real_uav/ses-undated-105/rec-20260522-0009/rec-20260522-0009__ch-00.wav",
+      "sha256": "8cab7b65389aebffd0190df43ff899cfc56c3e505c5adc264c50a20eff2cfba6",
+      "bytes": 8732716,
+      "range": [
+        5832161079,
+        5835783885
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0010",
+      "member": "dataset/data/real_uav/ses-undated-106/rec-20260522-0010/rec-20260522-0010__ch-00.wav",
+      "sha256": "d47fcfac5a39b877e52d73dc5db3155b15323f752f7bd437c1a84b9d1a979adb",
+      "bytes": 8298540,
+      "range": [
+        5891370408,
+        5895689781
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0011",
+      "member": "dataset/data/real_uav/ses-undated-107/rec-20260522-0011/rec-20260522-0011__ch-00.wav",
+      "sha256": "f68176041f160b2128b8851e098363ed43f91870d77be4ce4825c5657893aa0d",
+      "bytes": 8589356,
+      "range": [
+        5960658873,
+        5964435803
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0012",
+      "member": "dataset/data/real_uav/ses-undated-108/rec-20260522-0012/rec-20260522-0012__ch-00.wav",
+      "sha256": "367a1fee415519fcde12762ab528f44203bc295c2a44026e156e637aa771ebf6",
+      "bytes": 9388076,
+      "range": [
+        6020842264,
+        6024673842
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0013",
+      "member": "dataset/data/real_uav/ses-undated-109/rec-20260522-0013/rec-20260522-0013__ch-00.wav",
+      "sha256": "42b2417e797010b15cf3c7f747620e6064b89dd5cb951040be9049f09f5a25d9",
+      "bytes": 8474668,
+      "range": [
+        6083726231,
+        6086901258
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0014",
+      "member": "dataset/data/real_uav/ses-undated-110/rec-20260522-0014/rec-20260522-0014__ch-00.wav",
+      "sha256": "9ffa2b52f79217814e424c72c43e4911cbc763d2c6b0b32a11a60e597f37f963",
+      "bytes": 9162796,
+      "range": [
+        6167389154,
+        6170723517
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0015",
+      "member": "dataset/data/real_uav/ses-undated-111/rec-20260522-0015/rec-20260522-0015__ch-00.wav",
+      "sha256": "c1315394a742c251dfacb8a29fd8a81d92aa0806de2e257a512797868f4ced83",
+      "bytes": 9322540,
+      "range": [
+        6221608784,
+        6225190046
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0016",
+      "member": "dataset/data/real_uav/ses-undated-112/rec-20260522-0016/rec-20260522-0016__ch-00.wav",
+      "sha256": "b0d938055a986971154a7b9bb7325f87f8e5d4c20651d24d24c39b6ea00d022e",
+      "bytes": 8441900,
+      "range": [
+        6280187010,
+        6283275453
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0017",
+      "member": "dataset/data/real_uav/ses-undated-113/rec-20260522-0017/rec-20260522-0017__ch-00.wav",
+      "sha256": "8e9b25f857299af8c36c74c90f27d10d6a41a62a5e582fb84fe4cc37f43041e2",
+      "bytes": 8228908,
+      "range": [
+        6329967752,
+        6334662097
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0018",
+      "member": "dataset/data/real_uav/ses-undated-114/rec-20260522-0018/rec-20260522-0018__ch-00.wav",
+      "sha256": "f25b0e930a68b0d2cde06960cbd3bfdc99592ed79dd1e8cc4c12489cbe6b3be0",
+      "bytes": 8278060,
+      "range": [
+        6406674464,
+        6411004252
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0019",
+      "member": "dataset/data/real_uav/ses-undated-115/rec-20260522-0019/rec-20260522-0019__ch-00.wav",
+      "sha256": "d2f293680fff38a50a3ff6496703f4c18ecc7bf5621d2ee49057fde28e0d276e",
+      "bytes": 8380460,
+      "range": [
+        6476159544,
+        6480359528
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0020",
+      "member": "dataset/data/real_uav/ses-undated-116/rec-20260522-0020/rec-20260522-0020__ch-00.wav",
+      "sha256": "940ff17104c8d4409af64cdc98761b7b4278c1f93da50f2fe04685b2b2af537f",
+      "bytes": 12824620,
+      "range": [
+        6544027186,
+        6551120302
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0021",
+      "member": "dataset/data/real_uav/ses-undated-117/rec-20260522-0021/rec-20260522-0021__ch-00.wav",
+      "sha256": "fb820658a5577ecaa4a67bb7ced1debabd5a6e28e465fe6cfb012f20728f0adb",
+      "bytes": 8339500,
+      "range": [
+        6659165701,
+        6662031666
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0022",
+      "member": "dataset/data/real_uav/ses-undated-118/rec-20260522-0022/rec-20260522-0022__ch-00.wav",
+      "sha256": "00f307b9775a58443fde0ca89df99842d52715332b6cbd51fbb3d94bf2e20c33",
+      "bytes": 8286252,
+      "range": [
+        6705246652,
+        6708261811
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0023",
+      "member": "dataset/data/real_uav/ses-undated-119/rec-20260522-0023/rec-20260522-0023__ch-00.wav",
+      "sha256": "2715f9cde6c6f096c2a33e138a5df4b7ad09de2fcd3f4b07cc6e6e9083f6686f",
+      "bytes": 8376364,
+      "range": [
+        6755374178,
+        6758214811
+      ]
+    },
+    {
+      "recording_id": "rec-20260522-0024",
+      "member": "dataset/data/real_uav/ses-undated-120/rec-20260522-0024/rec-20260522-0024__ch-00.wav",
+      "sha256": "c352a04a67ea09db67c54b8eae180ce39d6746fddf2c78ec52a473c05750491f",
+      "bytes": 8081452,
+      "range": [
+        6850327685,
+        6853137329
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0001",
+      "member": "dataset/data/real_uav/ses-undated-121/rec-20260525-0001/rec-20260525-0001__ch-00.wav",
+      "sha256": "93a2bebf5dde4290fbe6a061652ac2b051dd9881f4f9d4e864d5654220be97fd",
+      "bytes": 8724524,
+      "range": [
+        6896462144,
+        6901614952
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0002",
+      "member": "dataset/data/real_uav/ses-undated-122/rec-20260525-0002/rec-20260525-0002__ch-00.wav",
+      "sha256": "f245a2777eee98bf76232234ea7d3e0dbc416e38715b04739612b2b21cb3685d",
+      "bytes": 8134700,
+      "range": [
+        6980203580,
+        6984563833
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0003",
+      "member": "dataset/data/real_uav/ses-undated-123/rec-20260525-0003/rec-20260525-0003__ch-00.wav",
+      "sha256": "fde3f57ba211dc247db3d2ab4dc07134ae6af8d298b43f7a642b27d09acc305c",
+      "bytes": 8036396,
+      "range": [
+        7051100633,
+        7055700251
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0004",
+      "member": "dataset/data/real_uav/ses-undated-124/rec-20260525-0004/rec-20260525-0004__ch-00.wav",
+      "sha256": "bfe95bc295c5bf6051646732a78a1880dd596b4c9d3180afa57221d1fd33aae0",
+      "bytes": 11767852,
+      "range": [
+        7124932856,
+        7131785568
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0005",
+      "member": "dataset/data/real_uav/ses-undated-125/rec-20260525-0005/rec-20260525-0005__ch-00.wav",
+      "sha256": "c383348fa126c535e0071e516e5596f98f5f15a32c61d07b8d066c3ef189248b",
+      "bytes": 9076780,
+      "range": [
+        7235938984,
+        7240652452
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0006",
+      "member": "dataset/data/real_uav/ses-undated-126/rec-20260525-0006/rec-20260525-0006__ch-00.wav",
+      "sha256": "0a5daf95f4461690604f28cb6aac69c2fbbe18502198d32486554c27274b5b52",
+      "bytes": 8507436,
+      "range": [
+        7312803461,
+        7317525586
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0007",
+      "member": "dataset/data/real_uav/ses-undated-127/rec-20260525-0007/rec-20260525-0007__ch-00.wav",
+      "sha256": "8ea6270fc7040616728415dc1000cd400ca1684012da487571ef6a3e6569cb50",
+      "bytes": 8167468,
+      "range": [
+        7389213438,
+        7393489569
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0008",
+      "member": "dataset/data/real_uav/ses-undated-128/rec-20260525-0008/rec-20260525-0008__ch-00.wav",
+      "sha256": "86735b742800c912ffaefee3b378ee6c0cbc42e1219c607f0b54cbbbef69aecb",
+      "bytes": 8392748,
+      "range": [
+        7458087477,
+        7462455339
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0009",
+      "member": "dataset/data/real_uav/ses-undated-129/rec-20260525-0009/rec-20260525-0009__ch-00.wav",
+      "sha256": "25e5183e610ecc56b505a0a852400e80cbb9158bdba992ef728ed49ccbc58562",
+      "bytes": 8101932,
+      "range": [
+        7528945711,
+        7533069478
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0010",
+      "member": "dataset/data/real_uav/ses-undated-130/rec-20260525-0010/rec-20260525-0010__ch-00.wav",
+      "sha256": "8757090ed477dd3c1877d8bd9b7638ae1da10104e7ee4ea74b2574773ae256d9",
+      "bytes": 8388652,
+      "range": [
+        7651183430,
+        7655521033
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0011",
+      "member": "dataset/data/real_uav/ses-undated-131/rec-20260525-0011/rec-20260525-0011__ch-00.wav",
+      "sha256": "86fcc4d4aee7ba3f460495468833e141b7d0ab61f9add33e4eb2308b18e9ba0c",
+      "bytes": 8339500,
+      "range": [
+        7721107147,
+        7725716147
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0012",
+      "member": "dataset/data/real_uav/ses-undated-132/rec-20260525-0012/rec-20260525-0012__ch-00.wav",
+      "sha256": "0ee02db5151fb9c26ff9bbece12d1e6cf9824a13d2bdf9fa5b56d2233ea3fdea",
+      "bytes": 8495148,
+      "range": [
+        7795943133,
+        7800378770
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0013",
+      "member": "dataset/data/real_uav/ses-undated-133/rec-20260525-0013/rec-20260525-0013__ch-00.wav",
+      "sha256": "35426bb8d681d18ed03336194bc9918453158b80cace967e1faca99cf11e8ea4",
+      "bytes": 9547820,
+      "range": [
+        7868054721,
+        7873909899
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0014",
+      "member": "dataset/data/real_uav/ses-undated-134/rec-20260525-0014/rec-20260525-0014__ch-00.wav",
+      "sha256": "3c1ab18710305c2a9f06dfed89d316c5da62a96b94a0d9cb5db74ee28812f76e",
+      "bytes": 8585260,
+      "range": [
+        7962722650,
+        7967624466
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0015",
+      "member": "dataset/data/real_uav/ses-undated-135/rec-20260525-0015/rec-20260525-0015__ch-00.wav",
+      "sha256": "164a465bddb0c2f3ca12e15a56f900576ebd48c9536febe4be40a3f702eb3d48",
+      "bytes": 9232428,
+      "range": [
+        8041941022,
+        8047739401
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0016",
+      "member": "dataset/data/real_uav/ses-undated-136/rec-20260525-0016/rec-20260525-0016__ch-00.wav",
+      "sha256": "07685b902df7d9c66442dc486375f14c95ec23f5ce9bbd79ade88435f0bba57d",
+      "bytes": 9658412,
+      "range": [
+        8135198171,
+        8140842798
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0017",
+      "member": "dataset/data/real_uav/ses-undated-137/rec-20260525-0017/rec-20260525-0017__ch-00.wav",
+      "sha256": "67e97c5839faa5efeeba48639cbbead4838bab02267d159a62079d8d2eda60c9",
+      "bytes": 8593452,
+      "range": [
+        8227194795,
+        8231804516
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0018",
+      "member": "dataset/data/real_uav/ses-undated-138/rec-20260525-0018/rec-20260525-0018__ch-00.wav",
+      "sha256": "34ba2317431d5092a5a76d1979973e341deb83b0ae973874b51241ff06121fc4",
+      "bytes": 8581164,
+      "range": [
+        8301589299,
+        8306059443
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0019",
+      "member": "dataset/data/real_uav/ses-undated-139/rec-20260525-0019/rec-20260525-0019__ch-00.wav",
+      "sha256": "212aa54042bc43e39f7d42e5c50c30c28d1b6e6d3af1ebdebce43058b0545b46",
+      "bytes": 10076204,
+      "range": [
+        8373607508,
+        8378732368
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0020",
+      "member": "dataset/data/real_uav/ses-undated-140/rec-20260525-0020/rec-20260525-0020__ch-00.wav",
+      "sha256": "d6760c1f344f40d4f1e684c694cb8deeec1cc3eb341914e682cc3df61082a300",
+      "bytes": 10985516,
+      "range": [
+        8537302248,
+        8543476083
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0021",
+      "member": "dataset/data/real_uav/ses-undated-141/rec-20260525-0021/rec-20260525-0021__ch-00.wav",
+      "sha256": "1831509eab391486178530871a444abb1d64de707ffff648c19972a5b56ec803",
+      "bytes": 9109548,
+      "range": [
+        8636442039,
+        8642051294
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0022",
+      "member": "dataset/data/real_uav/ses-undated-142/rec-20260525-0022/rec-20260525-0022__ch-00.wav",
+      "sha256": "28871b16b1eaea9eb733c4ff263839c1758a78068f940a66835d58a2edeeb965",
+      "bytes": 8286252,
+      "range": [
+        8727745444,
+        8732572974
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0023",
+      "member": "dataset/data/real_uav/ses-undated-143/rec-20260525-0023/rec-20260525-0023__ch-00.wav",
+      "sha256": "94860f8d8d23cea768109283fda210091ce61389dadca251530ceca4f6d0b09d",
+      "bytes": 8654892,
+      "range": [
+        8806013458,
+        8810921748
+      ]
+    },
+    {
+      "recording_id": "rec-20260525-0024",
+      "member": "dataset/data/real_uav/ses-undated-144/rec-20260525-0024/rec-20260525-0024__ch-00.wav",
+      "sha256": "2f66c3e4245b3a1700ad16acbbfbdf8ea17ee41374b4b2db70d5312a7f340599",
+      "bytes": 9916460,
+      "range": [
+        8885860867,
+        8891757101
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0001",
+      "member": "dataset/data/real_uav/ses-undated-145/rec-20260701-0001/rec-20260701-0001__ch-00.wav",
+      "sha256": "6b21f378d6218fcc7fb7e903c80b844e0a7bed6fe2f9c591fec9d6dcad8a8690",
+      "bytes": 8462380,
+      "range": [
+        8982166608,
+        8987099814
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0002",
+      "member": "dataset/data/real_uav/ses-undated-146/rec-20260701-0002/rec-20260701-0002__ch-00.wav",
+      "sha256": "0a19c86f4d13b1dc2c29c65866b05313c645bf62632ae721cc129571b0f9b4f0",
+      "bytes": 8593452,
+      "range": [
+        9061558054,
+        9066171107
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0003",
+      "member": "dataset/data/real_uav/ses-undated-147/rec-20260701-0003/rec-20260701-0003__ch-00.wav",
+      "sha256": "cabde1b2bb41e3265c85f88e66d5ab7ac286f7495b873ceb959d5809de8cd726",
+      "bytes": 9175084,
+      "range": [
+        9135848587,
+        9140771714
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0004",
+      "member": "dataset/data/real_uav/ses-undated-148/rec-20260701-0004/rec-20260701-0004__ch-00.wav",
+      "sha256": "a0f0b93deb027c144f64f89d24ff29b50480261f1b8dd2df95b26f615cac3bee",
+      "bytes": 7946284,
+      "range": [
+        9215421192,
+        9220143725
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0005",
+      "member": "dataset/data/real_uav/ses-undated-149/rec-20260701-0005/rec-20260701-0005__ch-00.wav",
+      "sha256": "0e931999f6b3b39804ebc65f8563bd1a3478dc4065dc3f75b13912a45b8829fd",
+      "bytes": 8343596,
+      "range": [
+        9291498849,
+        9296883980
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0006",
+      "member": "dataset/data/real_uav/ses-undated-150/rec-20260701-0006/rec-20260701-0006__ch-00.wav",
+      "sha256": "819d75c98d9423246bb12a9c9c243190918d488a4741d5c745111e2aa55dd2f4",
+      "bytes": 8880172,
+      "range": [
+        9472253861,
+        9477992722
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0007",
+      "member": "dataset/data/real_uav/ses-undated-151/rec-20260701-0007/rec-20260701-0007__ch-00.wav",
+      "sha256": "a7f604b503c11c9fbf84e8e6ef2287505e0763d0deec5c1db9473638a0c089c7",
+      "bytes": 8867884,
+      "range": [
+        9562870192,
+        9568336613
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0008",
+      "member": "dataset/data/real_uav/ses-undated-152/rec-20260701-0008/rec-20260701-0008__ch-00.wav",
+      "sha256": "47e867a7a6fe39084d58467d3246715fa271bed554836777a5ca76fb437d1960",
+      "bytes": 8298540,
+      "range": [
+        9649418158,
+        9654977522
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0009",
+      "member": "dataset/data/real_uav/ses-undated-153/rec-20260701-0009/rec-20260701-0009__ch-00.wav",
+      "sha256": "00d8fd2f279ef267d6d60c0604072bb93aea0711c839dd80cc6c678b9d8936be",
+      "bytes": 8228908,
+      "range": [
+        9738796495,
+        9743553848
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0010",
+      "member": "dataset/data/real_uav/ses-undated-154/rec-20260701-0010/rec-20260701-0010__ch-00.wav",
+      "sha256": "5a6391baa5109f5f5b040e60921355c82135059b96909afa3e1118058a64177c",
+      "bytes": 8146988,
+      "range": [
+        9816395758,
+        9821040244
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0011",
+      "member": "dataset/data/real_uav/ses-undated-155/rec-20260701-0011/rec-20260701-0011__ch-00.wav",
+      "sha256": "f7bc7ef526642fc459f509086977beca228f1f0ee7d2ff051ab77fe1ad6616e8",
+      "bytes": 8183852,
+      "range": [
+        9891565657,
+        9896318032
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0012",
+      "member": "dataset/data/real_uav/ses-undated-156/rec-20260701-0012/rec-20260701-0012__ch-00.wav",
+      "sha256": "9157628fce59ce80823b7729c9e4bbaa414d84a9e9332e24c199ceb63550b691",
+      "bytes": 8359980,
+      "range": [
+        9968604252,
+        9973771738
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0013",
+      "member": "dataset/data/real_uav/ses-undated-157/rec-20260701-0013/rec-20260701-0013__ch-00.wav",
+      "sha256": "5c29bfcfa2e28ea4e2bac3775f286058586a929fd4f738d7e80e30eee96f2d31",
+      "bytes": 9113644,
+      "range": [
+        10051802888,
+        10057649269
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0014",
+      "member": "dataset/data/real_uav/ses-undated-158/rec-20260701-0014/rec-20260701-0014__ch-00.wav",
+      "sha256": "53dd9ed211129f51b38b44337f58454adf52373a2a086e763508c789aeaef503",
+      "bytes": 9273388,
+      "range": [
+        10146552583,
+        10152410334
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0015",
+      "member": "dataset/data/real_uav/ses-undated-159/rec-20260701-0015/rec-20260701-0015__ch-00.wav",
+      "sha256": "231f1785b880bcaa92fe1e36cb17bd203396bb4cc5636e06288aa495c491b2d4",
+      "bytes": 7958572,
+      "range": [
+        10239117773,
+        10243985913
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0016",
+      "member": "dataset/data/real_uav/ses-undated-160/rec-20260701-0016/rec-20260701-0016__ch-00.wav",
+      "sha256": "c07d01173349d0afb7e69cb832e926d92bea2c3516fa37f30ff69a5e66ff89ba",
+      "bytes": 11702316,
+      "range": [
+        10344562324,
+        10352390075
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0017",
+      "member": "dataset/data/real_uav/ses-undated-161/rec-20260701-0017/rec-20260701-0017__ch-00.wav",
+      "sha256": "2a4bd854fa0c26670095f7d45aef5462419a9c4e9aca8d4041d8875338423322",
+      "bytes": 8077356,
+      "range": [
+        10470625238,
+        10475595384
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0018",
+      "member": "dataset/data/real_uav/ses-undated-162/rec-20260701-0018/rec-20260701-0018__ch-00.wav",
+      "sha256": "015c50b0a9a6f1485e1e6117142cdc28717b0a4c1e7cf4379efe9711f93c0866",
+      "bytes": 8380460,
+      "range": [
+        10551637186,
+        10556402415
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0019",
+      "member": "dataset/data/real_uav/ses-undated-163/rec-20260701-0019/rec-20260701-0019__ch-00.wav",
+      "sha256": "edde9fbc11ba98e8fed0cc0d4d6e95a3e93a61416433635fff7f0d20c9c33534",
+      "bytes": 8933420,
+      "range": [
+        10629397670,
+        10634565032
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0020",
+      "member": "dataset/data/real_uav/ses-undated-164/rec-20260701-0020/rec-20260701-0020__ch-00.wav",
+      "sha256": "de1ac347c0a4eeedd53118272dd9373e2461164ca69a7f8c72cf416ab2a0ed71",
+      "bytes": 8867884,
+      "range": [
+        10713543186,
+        10719088782
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0021",
+      "member": "dataset/data/real_uav/ses-undated-165/rec-20260701-0021/rec-20260701-0021__ch-00.wav",
+      "sha256": "de56cd918ec6072e8f4c0ac10d0d4f6bc11610c039a51d32ac056f75e3b2ab5f",
+      "bytes": 8310828,
+      "range": [
+        10802614192,
+        10807927137
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0022",
+      "member": "dataset/data/real_uav/ses-undated-166/rec-20260701-0022/rec-20260701-0022__ch-00.wav",
+      "sha256": "13f46b019960a07fdbb0052e19ad95d879fa0ff5d0e74b6efe3d282f1ba037e0",
+      "bytes": 8581164,
+      "range": [
+        10888812791,
+        10893907587
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0023",
+      "member": "dataset/data/real_uav/ses-undated-167/rec-20260701-0023/rec-20260701-0023__ch-00.wav",
+      "sha256": "ab49222b6c12711a7bcf87db8c023af200415c4a34b1a6d7aaa4a6f4781628f2",
+      "bytes": 8814636,
+      "range": [
+        10969904944,
+        10975324636
+      ]
+    },
+    {
+      "recording_id": "rec-20260701-0024",
+      "member": "dataset/data/real_uav/ses-undated-168/rec-20260701-0024/rec-20260701-0024__ch-00.wav",
+      "sha256": "564a3bfa3da72fb554dc780e10350ecd8b530a4f786e1568c0228032cbb9762a",
+      "bytes": 8081452,
+      "range": [
+        11056378747,
+        11061738746
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0001",
+      "member": "dataset/data/real_uav/ses-undated-169/rec-20260702-0001/rec-20260702-0001__ch-00.wav",
+      "sha256": "1b0d3087e7bd693527a306d31cf97fffa2426c466c2d44444c9f297625021fe5",
+      "bytes": 8478764,
+      "range": [
+        11143637014,
+        11148441270
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0002",
+      "member": "dataset/data/real_uav/ses-undated-170/rec-20260702-0002/rec-20260702-0002__ch-00.wav",
+      "sha256": "bcd3eb5ef77845ea5ecc26739fd2f2345f2410098421326b49ba4bdc96640130",
+      "bytes": 8106028,
+      "range": [
+        11287619075,
+        11292758332
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0003",
+      "member": "dataset/data/real_uav/ses-undated-171/rec-20260702-0003/rec-20260702-0003__ch-00.wav",
+      "sha256": "b907975e6f348fa92e80954306928c8fd12c074be72cb41ba621a8b4e9bb980b",
+      "bytes": 8290348,
+      "range": [
+        11369028298,
+        11374168914
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0004",
+      "member": "dataset/data/real_uav/ses-undated-172/rec-20260702-0004/rec-20260702-0004__ch-00.wav",
+      "sha256": "f212570ce45b2f8f620e6acde83d87285a20bcb8a6fef7462f95a34294636ee2",
+      "bytes": 9920556,
+      "range": [
+        11450302402,
+        11456614862
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0005",
+      "member": "dataset/data/real_uav/ses-undated-173/rec-20260702-0005/rec-20260702-0005__ch-00.wav",
+      "sha256": "714e0b00764ad4a3e10b5b0fe8acf71a1a7562857f0d85dd5a822f3d7f51e4f9",
+      "bytes": 8917036,
+      "range": [
+        11551032499,
+        11556803341
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0006",
+      "member": "dataset/data/real_uav/ses-undated-174/rec-20260702-0006/rec-20260702-0006__ch-00.wav",
+      "sha256": "3caf7c5fd6367eaa32f33cf45ea757ff901ee83d05e2f77d62ca717b2786e764",
+      "bytes": 8953900,
+      "range": [
+        11642775024,
+        11648509732
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0007",
+      "member": "dataset/data/real_uav/ses-undated-175/rec-20260702-0007/rec-20260702-0007__ch-00.wav",
+      "sha256": "e8499d771e7340f329413a9f3495fc05e66ee3db8898b053138ccb6305347b4e",
+      "bytes": 11661356,
+      "range": [
+        11734375160,
+        11741723476
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0008",
+      "member": "dataset/data/real_uav/ses-undated-176/rec-20260702-0008/rec-20260702-0008__ch-00.wav",
+      "sha256": "ae4991f47a550fb4de664f0456202acccccf8a7af1070e4ef62a991ec1b83ab5",
+      "bytes": 8089644,
+      "range": [
+        11848117558,
+        11852737617
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0009",
+      "member": "dataset/data/real_uav/ses-undated-177/rec-20260702-0009/rec-20260702-0009__ch-00.wav",
+      "sha256": "ba15820ee094819f7f16764afb4273ce025228e83f7c40844d743921c2ddd10b",
+      "bytes": 8224812,
+      "range": [
+        11921453744,
+        11926179289
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0010",
+      "member": "dataset/data/real_uav/ses-undated-178/rec-20260702-0010/rec-20260702-0010__ch-00.wav",
+      "sha256": "f229febdebf64fea44f6b584d912f82c1e3b38f32a07f05ffd7b62f56a2d1b11",
+      "bytes": 8146988,
+      "range": [
+        11995811241,
+        12000616424
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0011",
+      "member": "dataset/data/real_uav/ses-undated-179/rec-20260702-0011/rec-20260702-0011__ch-00.wav",
+      "sha256": "e6fd2cb9d41ba97a0348cdbdae9be254800981e9b778de5cbc8699b267ddd3da",
+      "bytes": 8302636,
+      "range": [
+        12071375820,
+        12076300045
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0012",
+      "member": "dataset/data/real_uav/ses-undated-180/rec-20260702-0012/rec-20260702-0012__ch-00.wav",
+      "sha256": "67791bb18bcd6bb4053d8bacb04889b5a99dd08313a1f576bd244ea9703bd04f",
+      "bytes": 7954476,
+      "range": [
+        12210563542,
+        12215583709
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0013",
+      "member": "dataset/data/real_uav/ses-undated-181/rec-20260702-0013/rec-20260702-0013__ch-00.wav",
+      "sha256": "ae68a8626e30b51003105dd13b8f08fe3f83269cdc631fe3f9863bfd4f4276f3",
+      "bytes": 8937516,
+      "range": [
+        12289588691,
+        12295386608
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0014",
+      "member": "dataset/data/real_uav/ses-undated-182/rec-20260702-0014/rec-20260702-0014__ch-00.wav",
+      "sha256": "a430be9abf587aa9e1d7beb0ef25d7b95bc9b31390c1c5cc3bc1b99ace6b9cd3",
+      "bytes": 9203756,
+      "range": [
+        12381628125,
+        12387427825
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0015",
+      "member": "dataset/data/real_uav/ses-undated-183/rec-20260702-0015/rec-20260702-0015__ch-00.wav",
+      "sha256": "91458e863f413e56a2946c7ac94f74012e1e1f56024aae4d540e1782fc563831",
+      "bytes": 7979052,
+      "range": [
+        12473517067,
+        12477664115
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0016",
+      "member": "dataset/data/real_uav/ses-undated-184/rec-20260702-0016/rec-20260702-0016__ch-00.wav",
+      "sha256": "7abd45bab9e15a8cf53e9fb8a4851f560db70f34e3793249fbe0b386d255dc40",
+      "bytes": 9089068,
+      "range": [
+        12538294499,
+        12544144548
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0017",
+      "member": "dataset/data/real_uav/ses-undated-185/rec-20260702-0017/rec-20260702-0017__ch-00.wav",
+      "sha256": "c0c3d7af9e1f7f9f0f23e4b81cca83df711f5eeee5686398366ee2f5e37bd65c",
+      "bytes": 8429612,
+      "range": [
+        12630534217,
+        12635387571
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0018",
+      "member": "dataset/data/real_uav/ses-undated-186/rec-20260702-0018/rec-20260702-0018__ch-00.wav",
+      "sha256": "d217dc5eb1c0f93a8bbe10248b49f9a8906c8f7927fe9e2896f3efbddb9d4716",
+      "bytes": 8585260,
+      "range": [
+        12707574414,
+        12712712988
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0019",
+      "member": "dataset/data/real_uav/ses-undated-187/rec-20260702-0019/rec-20260702-0019__ch-00.wav",
+      "sha256": "31270733c94b7d627ce6591d3d20f05f27e8ab23ba6dc528971ae60779689cdb",
+      "bytes": 9228332,
+      "range": [
+        12788904756,
+        12794519190
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0020",
+      "member": "dataset/data/real_uav/ses-undated-188/rec-20260702-0020/rec-20260702-0020__ch-00.wav",
+      "sha256": "28be9b9f4f73a5c24e7beb9cc0bb48721e2b5150d727c4c8d9caef48df1ef821",
+      "bytes": 8077356,
+      "range": [
+        12877623188,
+        12882846977
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0021",
+      "member": "dataset/data/real_uav/ses-undated-189/rec-20260702-0021/rec-20260702-0021__ch-00.wav",
+      "sha256": "bba1897b603b9dcacb0a1a0efcd5419733b724afa7e63108a76e094023773039",
+      "bytes": 7999532,
+      "range": [
+        12960217418,
+        12965396461
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0022",
+      "member": "dataset/data/real_uav/ses-undated-190/rec-20260702-0022/rec-20260702-0022__ch-00.wav",
+      "sha256": "b5c0b8afc437eba72653c1f2e6baa9c0101b7e2e9bf2c37dd3d510a3e6fda55f",
+      "bytes": 8745004,
+      "range": [
+        13098201011,
+        13103804259
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0023",
+      "member": "dataset/data/real_uav/ses-undated-191/rec-20260702-0023/rec-20260702-0023__ch-00.wav",
+      "sha256": "7927969df7d7201edd4d2c051de88d353a1d67e8f39572571d3799f52a49efc0",
+      "bytes": 8364076,
+      "range": [
+        13187848498,
+        13192309388
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0024",
+      "member": "dataset/data/real_uav/ses-undated-192/rec-20260702-0024/rec-20260702-0024__ch-00.wav",
+      "sha256": "fabc1d00d900b61f5d7860a76123f786116ea9f2017af4ffd81f85e896cd7b9d",
+      "bytes": 8441900,
+      "range": [
+        13258474313,
+        13263608507
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0025",
+      "member": "dataset/data/real_uav/ses-undated-193/rec-20260702-0025/rec-20260702-0025__ch-00.wav",
+      "sha256": "0d241c765d4c2a9a19ad443f35023206fd355c94e3ffac0c6a28654692b90f5a",
+      "bytes": 8175660,
+      "range": [
+        13340018968,
+        13344680193
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0026",
+      "member": "dataset/data/real_uav/ses-undated-194/rec-20260702-0026/rec-20260702-0026__ch-00.wav",
+      "sha256": "4aca67ef48064bee7d2ff50b58fd3c3206f700d8b5285a5ca27c520ce61b5e6e",
+      "bytes": 7925804,
+      "range": [
+        13413299136,
+        13417994603
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0027",
+      "member": "dataset/data/real_uav/ses-undated-195/rec-20260702-0027/rec-20260702-0027__ch-00.wav",
+      "sha256": "45d1e2ae53c583881192ccde03f7640845f125bad85948ad40b93272cf1239ba",
+      "bytes": 8745004,
+      "range": [
+        13487832005,
+        13492818818
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0028",
+      "member": "dataset/data/real_uav/ses-undated-196/rec-20260702-0028/rec-20260702-0028__ch-00.wav",
+      "sha256": "cc65d46eb22c0ecf6f84406edb5223b11ab45a7b76701fbed2f952c3b22eede9",
+      "bytes": 8835116,
+      "range": [
+        13566549896,
+        13571969726
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0029",
+      "member": "dataset/data/real_uav/ses-undated-197/rec-20260702-0029/rec-20260702-0029__ch-00.wav",
+      "sha256": "99f2d30fbc63d405dc689aefc40f114bc2ef947cf0b8d343cfe3bc8fb9a117af",
+      "bytes": 8355884,
+      "range": [
+        13652551218,
+        13657817519
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0030",
+      "member": "dataset/data/real_uav/ses-undated-198/rec-20260702-0030/rec-20260702-0030__ch-00.wav",
+      "sha256": "78cf2ca40b6c1253c10547fff23f058bf5daf6926008326ced7159e6cc5ed4a9",
+      "bytes": 11010092,
+      "range": [
+        13735778330,
+        13742591999
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0031",
+      "member": "dataset/data/real_uav/ses-undated-199/rec-20260702-0031/rec-20260702-0031__ch-00.wav",
+      "sha256": "aa8413c7dc2d3b85112f990988f9b1ffcfbe91545f8820f8340e348c299f0e0d",
+      "bytes": 8134700,
+      "range": [
+        13843751241,
+        13848878314
+      ]
+    },
+    {
+      "recording_id": "rec-20260702-0032",
+      "member": "dataset/data/real_uav/ses-undated-200/rec-20260702-0032/rec-20260702-0032__ch-00.wav",
+      "sha256": "67bd869603e60130aab5acd2e66b43807ed25d93c9968aafe42573fa38ebcd85",
+      "bytes": 9719852,
+      "range": [
+        14001275943,
+        14007350383
+      ]
+    }
+  ],
+  "wav_bytes": 1844351584,
+  "selected_range_bytes": 947126104
+}

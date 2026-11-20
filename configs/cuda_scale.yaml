@@ -1,0 +1,4 @@
+# Inherit the fixed optimizer, seed, dropout and epoch budget from cuda.yaml.
+models:
+  feature_transformer_xl: {architecture: transformer, width: 1024, depth: 12, heads: 16}
+  residual_mlp_xxl: {architecture: residual_mlp, width: 6144, depth: 6}

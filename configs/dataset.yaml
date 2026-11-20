@@ -1,0 +1,14 @@
+version: '1.1.0'
+doi: 10.5281/zenodo.23613504
+license: CC-BY-4.0
+url: https://zenodo.org/records/23613504/files/UAV_Acoustic_Dataset_v1.1.0_Data_and_Experiments_compressed.zip
+archive_size: 20351796153
+archive_sha256: 938de69c4b3631b70519e3f2a759f7161f781d5022a11c1c33be8836532648df
+directory_start: 20351099767
+metadata_start: 20347221131
+metadata_end: 20347480000
+channel: 0
+metadata:
+  recordings: 843872c34c583ee3317986e52a02462db38e4b38f46eda0689029ba0f64a51b3
+  files: 24b56a55c40acf1b456a5fa433093b51b16d98d82cb9357eb3d494e1e0926b22
+  sessions: b4f5d8b151c00f1bb5abbb3748399b3f16dec8bef8aa9804757267c5611c6f2e

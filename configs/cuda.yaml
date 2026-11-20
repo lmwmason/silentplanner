@@ -1,0 +1,9 @@
+seed: 42
+epochs: 80
+learning_rate: 0.0003
+weight_decay: 0.02
+dropout: 0.10
+models:
+  residual_mlp_large: {architecture: residual_mlp, width: 1024, depth: 4}
+  residual_mlp_xl: {architecture: residual_mlp, width: 1536, depth: 6}
+  feature_transformer: {architecture: transformer, width: 512, depth: 6, heads: 8}

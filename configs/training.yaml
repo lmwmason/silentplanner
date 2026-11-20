@@ -1,0 +1,14 @@
+seed: 42
+features: [log10_slant_m, height_m, urban_scene]
+validation_batches: [batch-20260427, batch-20260525]
+test_batches: [batch-20260522, batch-20260702]
+cv_folds: 4
+random_forest:
+  n_estimators: 250
+  min_samples_leaf: 5
+  max_features: 1.0
+gradient_boosting:
+  n_estimators: 120
+  learning_rate: 0.04
+  max_depth: 2
+  min_samples_leaf: 5

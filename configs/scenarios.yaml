@@ -1,0 +1,10 @@
+scene_type: quiet_outdoor
+height_m: 10
+zones:
+  Classroom: {sensitivity: 0.8, type: classroom}
+  Library: {sensitivity: 1.0, type: library}
+  Science lab: {sensitivity: 0.7, type: laboratory}
+  Courtyard: {sensitivity: 0.4, type: outdoor}
+scenarios:
+  Courtyard-side example: {Classroom: 30, Library: 50, Science lab: 20, Courtyard: 10}
+  Classroom-side example: {Classroom: 10, Library: 20, Science lab: 30, Courtyard: 50}

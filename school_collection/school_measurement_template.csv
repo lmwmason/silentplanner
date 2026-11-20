@@ -1,0 +1,1 @@
+measurement_id,timestamp,location_id,location_type,background_level,unit,duration_s,device_model,calibration_status,temperature_c,humidity_pct,weather,notes
