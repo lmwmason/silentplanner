@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 //! Launch the native planner or export a reference map without a display.
 
+mod appearance;
 mod place;
 mod tile_map;
 mod ui;

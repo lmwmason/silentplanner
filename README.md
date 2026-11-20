@@ -2,9 +2,9 @@
 
 A Rust desktop app for exploring how the placement of an outdoor drone experiment could affect occupied areas. Mark receiver zones on a real map, compare relative acoustic scores, test how sensitive the ranking is to your assumptions, and export the analysis for field measurement planning.
 
-![Silent Planner running on Linux with fictional receiver zones and the relative impact overlay on the Seoul street map](docs/images/planner-streets.webp)
+![Silent Planner running on Linux with fictional receiver zones and the relative impact overlay on the Chungbuk Science High School street map](docs/images/planner-streets.webp)
 
-*Desktop screenshot of the built-in Seoul example. The library, classrooms and courtyard are fictional receiver zones. Street map © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright).*
+*Desktop screenshot of the built-in Chungbuk Science High School example. The map uses the school's public map pin. The three labeled receiver zones are illustrations. Street map © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright).*
 
 ## Quick Start
 
@@ -14,15 +14,15 @@ From the repository root, build and run the native app with Rust and Cargo:
 cargo run --locked --manifest-path planner/Cargo.toml --release
 ```
 
-1. Search for a place or enter latitude and longitude, or start with the built-in Seoul example.
+1. Search for a place or enter latitude and longitude, or start with the built-in Chungbuk Science High School example.
 2. Add the places where people are, adjust each zone's radius and sensitivity, then choose **Auto area** or draw an analysis boundary.
 3. Switch between **Streets** and **Satellite**. Enable **Noise overlay** for relative impact and **Stability** to see which low-score areas persist across changes to radius, sensitivity and grid spacing.
 4. Select **Export map** to save a printable SVG, grid CSV, analysis and project JSON, sensitivity results, candidate pairs for field measurement and, for a georeferenced project, GeoJSON.
 
-[Desktop setup, basemap details and export reference](planner/README.md)
+[Desktop setup, basemap details and export reference](planner/README.md) · [School location](https://school.cbe.go.kr/cbs-h/M010205/)
 
 <details>
-<summary>Satellite view and stability overlay</summary>
+<summary>Dark appearance, satellite view and stability overlay</summary>
 
 ![Silent Planner showing the satellite basemap with green stable low-score, amber uncertain and blue consistently unselected cells](docs/images/planner-satellite-stability.webp)
 

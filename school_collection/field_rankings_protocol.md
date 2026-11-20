@@ -2,7 +2,7 @@
 
 ## Freeze the comparison before recording
 
-Export the project and keep its original `field_plan.json` and `sensitivity.json`. The plan proposes up to three contrasts using a consistently low candidate and a higher-scoring, consistently unselected candidate. It uses the same named receiver zones for each member of a pair. Preserve the plan, including its predicted scores, before seeing any readings. If a point is inaccessible or inappropriate for field work, revise the map and freeze a new plan before collecting the comparison data. The included Seoul example has fictional zone placements and is a software demonstration.
+Export the project and keep its original `field_plan.json` and `sensitivity.json`. The plan proposes up to three contrasts using a consistently low candidate and a higher-scoring, consistently unselected candidate. It uses the same named receiver zones for each member of a pair. Preserve the plan, including its predicted scores, before seeing any readings. If a point is inaccessible or inappropriate for field work, revise the map and freeze a new plan before collecting the comparison data. The included Chungbuk Science High School example has fictional zone placements and is a software demonstration.
 
 ## Collect comparable measurements
 

@@ -9,12 +9,13 @@ use std::{
 };
 
 use crate::{
+    appearance::{self, BUTTON_TEXT, INDIGO, LOW_IMPACT, PRIMARY, ZONE, display, muted},
     place::{self, Place},
     tile_map::{self, Basemap},
 };
 use eframe::egui::{
     self, Align, Align2, Color32, Context, FontId, Frame, Layout, Margin, Pos2, Rect, RichText,
-    Sense, Stroke, StrokeKind, Vec2, pos2, vec2,
+    Sense, Stroke, StrokeKind, Theme, Vec2, pos2, vec2,
 };
 use silent_planner::sensitivity::{self, Sensitivity};
 use silent_planner::{
@@ -24,15 +25,6 @@ use silent_planner::{
 };
 
 type ExportResult = Result<(PathBuf, Option<String>), String>;
-
-const BACKGROUND: Color32 = Color32::from_rgb(12, 18, 27);
-const PANEL: Color32 = Color32::from_rgb(17, 25, 36);
-const TILE: Color32 = Color32::from_rgb(22, 34, 47);
-const EDGE: Color32 = Color32::from_rgb(46, 65, 81);
-const TEXT: Color32 = Color32::from_rgb(231, 241, 246);
-const MUTED: Color32 = Color32::from_rgb(165, 187, 204);
-const MINT: Color32 = Color32::from_rgb(53, 218, 167);
-const LILAC: Color32 = Color32::from_rgb(224, 195, 255);
 
 #[derive(Clone, Copy, PartialEq)]
 enum Mode {
@@ -134,22 +126,7 @@ pub struct Planner {
 
 impl Planner {
     pub fn new(ctx: &Context) -> Self {
-        let mut visuals = egui::Visuals::dark();
-        visuals.panel_fill = PANEL;
-        visuals.window_fill = PANEL;
-        visuals.extreme_bg_color = BACKGROUND;
-        visuals.override_text_color = Some(TEXT);
-        visuals.selection.bg_fill = Color32::from_rgb(23, 76, 69);
-        visuals.selection.stroke = Stroke::new(1.0_f32, MINT);
-        visuals.widgets.inactive.bg_fill = TILE;
-        visuals.widgets.inactive.weak_bg_fill = TILE;
-        visuals.widgets.inactive.bg_stroke = Stroke::new(1.0_f32, EDGE);
-        ctx.set_visuals(visuals);
-        let mut style = (*ctx.style()).clone();
-        style.spacing.item_spacing = vec2(9.0, 8.0);
-        style.spacing.button_padding = vec2(12.0, 7.0);
-        ctx.set_style(style);
-        add_place_name_font(ctx);
+        appearance::install(ctx);
         let project = Project::demo();
         let analysis = analyze(&project);
         let vworld_key = tile_map::vworld_key();
@@ -293,18 +270,35 @@ impl Planner {
     }
 
     fn site_controls(&mut self, ui: &mut egui::Ui) {
-        section(ui, "1   Find your site");
+        section(ui, "Find your site");
         ui.horizontal(|ui| {
-            let width = (ui.available_width() - 75.0).max(80.0);
-            let response = ui.add(
+            let width = (ui.available_width() - 64.0).max(80.0);
+            let response = ui.add_sized(
+                [width, 34.0],
                 egui::TextEdit::singleline(&mut self.query)
                     .char_limit(150)
-                    .desired_width(width)
-                    .hint_text("Place or latitude, longitude"),
+                    .margin(Margin::symmetric(10, 7))
+                    .hint_text(RichText::new("Place or coordinates").color(muted(ui.visuals()))),
             );
+            let shortcut = egui::KeyboardShortcut::new(egui::Modifiers::COMMAND, egui::Key::K);
+            if ui.input_mut(|input| input.consume_shortcut(&shortcut)) {
+                response.request_focus();
+            }
+            if response.has_focus() {
+                ui.painter().rect_stroke(
+                    response.rect.expand(1.5),
+                    7.0,
+                    Stroke::new(3.0_f32, INDIGO.gamma_multiply(0.20)),
+                    StrokeKind::Inside,
+                );
+            }
             let submitted = response.lost_focus() && ui.input(|i| i.key_pressed(egui::Key::Enter));
             if ui
-                .add_enabled(self.search_task.is_none(), egui::Button::new("Find"))
+                .add_enabled(
+                    self.search_task.is_none(),
+                    egui::Button::new("Find").min_size(vec2(0.0, 34.0)),
+                )
+                .on_hover_text("Search for a place (Ctrl/⌘+K to focus)")
                 .clicked()
                 || submitted
             {
@@ -312,7 +306,11 @@ impl Planner {
             }
         });
         if self.search_task.is_some() {
-            ui.label(RichText::new("Finding places…").small().color(MUTED));
+            ui.label(
+                RichText::new("Finding places…")
+                    .small()
+                    .color(muted(ui.visuals())),
+            );
         }
         let mut chosen = None;
         for site in &self.search_results {
@@ -364,50 +362,45 @@ impl Planner {
     }
 
     fn header(&mut self, ctx: &Context) {
+        let visuals = ctx.style().visuals.clone();
         egui::TopBottomPanel::top("header")
             .frame(
                 Frame::new()
-                    .fill(BACKGROUND)
-                    .inner_margin(Margin::symmetric(21, 15))
-                    .stroke(Stroke::new(1.0_f32, EDGE)),
+                    .fill(visuals.window_fill)
+                    .inner_margin(Margin::symmetric(24, 8))
+                    .stroke(visuals.widgets.noninteractive.bg_stroke),
             )
             .show(ctx, |ui| {
                 ui.horizontal(|ui| {
-                    let (rect, _) = ui.allocate_exact_size(vec2(41.0, 41.0), Sense::hover());
-                    ui.painter()
-                        .rect_filled(rect, 9.0, Color32::from_rgb(20, 65, 58));
-                    for (index, height) in [10.0, 22.0, 15.0].iter().enumerate() {
-                        let x = rect.left() + 12.0 + index as f32 * 8.0;
-                        ui.painter().line_segment(
-                            [
-                                pos2(x, rect.center().y - height / 2.0),
-                                pos2(x, rect.center().y + height / 2.0),
-                            ],
-                            Stroke::new(3.0_f32, MINT),
-                        );
-                    }
-                    ui.vertical(|ui| {
-                        ui.label(RichText::new("Silent Planner").size(25.0).strong());
-                        ui.label(
-                            RichText::new("Acoustic scenario mapping")
-                                .color(MUTED)
-                                .size(12.0),
-                        );
-                    });
+                    ui.label(display("Silent Planner", 23.0));
                     ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
-                        if ui
-                            .add_enabled(
+                        let export = ui.scope(|ui| {
+                            let widgets = &mut ui.visuals_mut().widgets;
+                            widgets.inactive.weak_bg_fill = PRIMARY;
+                            widgets.hovered.weak_bg_fill = Color32::from_rgb(67, 56, 202);
+                            widgets.active.weak_bg_fill = Color32::from_rgb(55, 48, 163);
+                            widgets.inactive.bg_stroke = Stroke::NONE;
+                            widgets.hovered.bg_stroke = Stroke::NONE;
+                            ui.add_enabled(
                                 self.export_task.is_none(),
-                                egui::Button::new(
-                                    RichText::new("Export map").strong().color(BACKGROUND),
-                                )
-                                .fill(MINT),
+                                egui::Button::new(RichText::new("Export map").color(BUTTON_TEXT))
+                                    .min_size(vec2(112.0, 38.0)),
                             )
-                            .clicked()
-                        {
+                        });
+                        if export.inner.clicked() {
                             self.begin_export(ctx);
                         }
                         ui.menu_button("Project", |ui| {
+                            let (label, theme) = if ui.visuals().dark_mode {
+                                ("Light appearance", Theme::Light)
+                            } else {
+                                ("Dark appearance", Theme::Dark)
+                            };
+                            if ui.button(label).clicked() {
+                                ctx.set_theme(theme);
+                                ui.close_menu();
+                            }
+                            ui.separator();
                             if ui.button("Open project…").clicked() {
                                 ui.close_menu();
                                 if let Some(path) = rfd::FileDialog::new()
@@ -442,17 +435,23 @@ impl Planner {
     fn controls(&mut self, ctx: &Context) {
         egui::SidePanel::left("workflow")
             .resizable(false)
-            .exact_width(300.0)
-            .frame(Frame::new().fill(PANEL).inner_margin(Margin::same(16)))
+            .exact_width(312.0)
+            .frame(
+                Frame::new()
+                    .fill(ctx.style().visuals.window_fill)
+                    .inner_margin(Margin::same(24)),
+            )
             .show(ctx, |ui| {
                 egui::ScrollArea::vertical().show(ui, |ui| {
                     self.site_controls(ui);
-                    ui.add_space(9.0);
+                    ui.add_space(12.0);
                     ui.separator();
+                    ui.add_space(8.0);
                     self.zone_controls(ui);
-                    ui.add_space(9.0);
+                    ui.add_space(12.0);
                     ui.separator();
-                    section(ui, "3   Choose the analysis area");
+                    ui.add_space(8.0);
+                    section(ui, "Analysis boundary");
                     let automatic = self.project.bounds.is_none();
                     ui.horizontal(|ui| {
                         if ui.selectable_label(automatic, "Auto area").clicked() {
@@ -472,13 +471,13 @@ impl Planner {
                         ui.label(
                             RichText::new("Fits around the marked zones.")
                                 .small()
-                                .color(MUTED),
+                                .color(muted(ui.visuals())),
                         );
                     } else {
                         ui.label(
                             RichText::new("Uses the rectangle you drew.")
                                 .small()
-                                .color(MUTED),
+                                .color(muted(ui.visuals())),
                         );
                     }
                     ui.add_space(10.0);
@@ -545,8 +544,8 @@ impl Planner {
     }
 
     fn zone_controls(&mut self, ui: &mut egui::Ui) {
-        section(ui, "2   Mark where people are");
-        let button = egui::Button::new(RichText::new("+ Add zone").strong())
+        section(ui, "Occupied zones");
+        let button = egui::Button::new("+ Add zone")
             .selected(self.mode == Mode::Add)
             .min_size(vec2(ui.available_width(), 33.0));
         if ui
@@ -563,11 +562,11 @@ impl Planner {
             ui.label(
                 RichText::new("Click the map to mark the first area.")
                     .small()
-                    .color(MUTED),
+                    .color(muted(ui.visuals())),
             );
         }
         for (index, zone) in self.project.zones.iter().enumerate() {
-            let label = format!("{}   ·   {:.0} m", zone.label, zone.radius_m);
+            let label = format!("{}  ·  {:.0} m", zone.label, zone.radius_m);
             if ui
                 .add(
                     egui::Button::new(label)
@@ -609,7 +608,10 @@ impl Planner {
                 {
                     self.mode = Mode::Move;
                 }
-                if ui.button("Remove").clicked() {
+                if ui
+                    .button(RichText::new("Remove").color(ui.visuals().error_fg_color))
+                    .clicked()
+                {
                     self.project.zones.remove(index);
                     self.zone = None;
                     self.mode = Mode::Inspect;
@@ -635,12 +637,9 @@ impl Planner {
         } else {
             self.local_canvas(ui)
         };
-        painter.rect_stroke(
-            response.rect,
-            8.0,
-            Stroke::new(1.0_f32, EDGE),
-            StrokeKind::Inside,
-        );
+        let background = ui.visuals().window_fill;
+        let border = ui.visuals().widgets.noninteractive.bg_stroke;
+        let secondary = muted(ui.visuals());
         let map_painter = painter.with_clip_rect(view.plot);
         let pointer = response
             .interact_pointer_pos()
@@ -676,33 +675,39 @@ impl Planner {
             map_painter.rect_stroke(
                 view.rectangle(analysis.bounds),
                 0.0,
-                Stroke::new(1.5_f32, MUTED),
+                Stroke::new(1.5_f32, secondary),
                 StrokeKind::Middle,
             );
         }
         if !has_basemap || self.visible_tiles == 0 {
-            draw_grid(&map_painter, &view);
+            draw_grid(&map_painter, &view, border.color);
         }
         for (index, zone) in self.project.zones.iter().enumerate() {
             let center = view.position(zone.center);
             let radius = (zone.radius_m as f32 * view.pixels_per_m).max(4.0);
             let selected = self.zone == Some(index);
-            let color = if selected { Color32::WHITE } else { LILAC };
+            let color = if selected { INDIGO } else { ZONE };
             map_painter.circle(
                 center,
                 radius,
-                Color32::from_rgba_unmultiplied(47, 26, 68, 125),
+                Color32::from_rgba_unmultiplied(113, 83, 153, 58),
                 Stroke::new(if selected { 2.7_f32 } else { 1.8_f32 }, color),
             );
             map_painter.circle_filled(center, 3.0, color);
-            let text =
-                map_painter.layout_no_wrap(zone.label.clone(), FontId::proportional(13.0), color);
-            let label = pos2(center.x + 7.0, center.y - 9.0 - text.size().y);
+            let text = map_painter.layout_no_wrap(
+                zone.label.clone(),
+                FontId::proportional(13.0),
+                ui.visuals().text_color(),
+            );
+            let label = pos2(
+                center.x - text.size().x / 2.0 - 6.0,
+                center.y - radius - 9.0 - text.size().y,
+            );
             let pill = Rect::from_min_size(label, text.size() + vec2(12.0, 6.0));
-            map_painter.rect_filled(pill, 4.0, BACKGROUND);
-            map_painter.galley(label + vec2(6.0, 3.0), text, color);
+            map_painter.rect(pill, 4.0, background, border, StrokeKind::Inside);
+            map_painter.galley(label + vec2(6.0, 3.0), text, ui.visuals().text_color());
         }
-        draw_compass(&painter, response.rect, &view);
+        draw_compass(&painter, response.rect, &view, background, secondary);
         if has_basemap && self.visible_tiles == 0 {
             let loading = self.tile_wait.elapsed() < Duration::from_secs(5);
             if loading {
@@ -717,7 +722,7 @@ impl Planner {
                     "Map unavailable. Switch layers or reload."
                 },
                 FontId::proportional(11.0),
-                MUTED,
+                secondary,
             );
         }
         if self.mode == Mode::Draw {
@@ -733,8 +738,8 @@ impl Planner {
             {
                 let bounds = Bounds::spanning(start, end);
                 let rect = view.rectangle(bounds);
-                painter.rect_filled(rect, 0.0, Color32::from_rgba_unmultiplied(53, 218, 167, 35));
-                painter.rect_stroke(rect, 0.0, Stroke::new(2.0_f32, MINT), StrokeKind::Inside);
+                painter.rect_filled(rect, 0.0, INDIGO.gamma_multiply(0.16));
+                painter.rect_stroke(rect, 0.0, Stroke::new(2.0_f32, INDIGO), StrokeKind::Inside);
                 if response.drag_stopped() {
                     if bounds.width() >= self.project.cell_size_m
                         && bounds.height() >= self.project.cell_size_m
@@ -837,11 +842,12 @@ impl Planner {
                     cell.supported
                 ));
             }
-            let text = painter.layout_no_wrap(label, FontId::monospace(11.0), TEXT);
+            let text_color = ui.visuals().text_color();
+            let text = painter.layout_no_wrap(label, FontId::monospace(11.0), text_color);
             let position = response.rect.left_bottom() + vec2(12.0, -13.0 - text.size().y);
             let pill = Rect::from_min_size(position, text.size() + vec2(12.0, 6.0));
-            painter.rect_filled(pill, 4.0, BACKGROUND);
-            painter.galley(position + vec2(6.0, 3.0), text, TEXT);
+            painter.rect(pill, 4.0, background, border, StrokeKind::Inside);
+            painter.galley(position + vec2(6.0, 3.0), text, text_color);
         }
     }
 
@@ -864,8 +870,8 @@ impl Planner {
             }
             view = View::new(response.rect, self.camera_bounds(base));
         }
-        painter.rect_filled(response.rect, 8.0, BACKGROUND);
-        painter.rect_filled(view.plot, 0.0, Color32::from_rgb(18, 27, 39));
+        painter.rect_filled(response.rect, 6.0, ui.visuals().panel_fill);
+        painter.rect_filled(view.plot, 0.0, ui.visuals().window_fill);
         (response, painter, view)
     }
 
@@ -890,8 +896,11 @@ impl Planner {
             let _ = self.map_memory.set_zoom(zoom);
             self.fit_geographic = false;
         }
-        ui.painter()
-            .rect_filled(ui.available_rect_before_wrap(), 0.0, BACKGROUND);
+        ui.painter().rect_filled(
+            ui.available_rect_before_wrap(),
+            0.0,
+            ui.visuals().faint_bg_color,
+        );
         let inspect = self.mode == Mode::Inspect;
         let mut tiles = tile_map::VisibleTiles::new(&mut self.tiles);
         let response = ui.add(
@@ -969,134 +978,130 @@ impl eframe::App for Planner {
             self.drag_start = None;
         }
         self.header(ctx);
-        self.controls(ctx);
+        let visuals = ctx.style().visuals.clone();
         egui::TopBottomPanel::bottom("status")
             .frame(
                 Frame::new()
-                    .fill(BACKGROUND)
-                    .inner_margin(Margin::symmetric(15, 8)),
+                    .fill(visuals.window_fill)
+                    .inner_margin(Margin::symmetric(24, 8))
+                    .stroke(visuals.widgets.noninteractive.bg_stroke),
             )
             .show(ctx, |ui| {
-                if let Some((message, success)) = self.message.clone() {
-                    ui.horizontal(|ui| {
-                        if ui.small_button("Dismiss").clicked() {
-                            self.message = None;
-                        } else {
-                            ui.label(RichText::new(message).small().color(if success {
-                                MINT
-                            } else {
-                                Color32::LIGHT_RED
-                            }));
-                        }
+                if let Some((message, success)) = &self.message {
+                    let color = if *success {
+                        ui.visuals().text_color()
+                    } else {
+                        ui.visuals().error_fg_color
+                    };
+                    let mut dismiss = false;
+                    ui.horizontal_wrapped(|ui| {
+                        ui.label(RichText::new(message).small().color(color));
+                        dismiss = ui.small_button("Dismiss").clicked();
                     });
+                    if dismiss {
+                        self.message = None;
+                    }
                 }
                 ui.horizontal_wrapped(|ui| {
                     ui.label(
-                        RichText::new("Relative noise estimate")
+                        RichText::new("Relative acoustic estimates · dBFS model")
                             .small()
-                            .color(MUTED),
+                            .color(muted(ui.visuals())),
                     );
                     if self.project.origin.is_some() {
                         let (credit, link) = tile_map::attribution(self.basemap);
                         ui.separator();
-                        ui.hyperlink_to(RichText::new(credit).small().color(MUTED), link);
+                        ui.hyperlink_to(RichText::new(credit).small(), link);
                     }
                 });
             });
+
+        self.controls(ctx);
         egui::CentralPanel::default()
-            .frame(Frame::new().fill(PANEL).inner_margin(Margin::same(17)))
-            .show(ctx, |ui| {
-                ui.label(RichText::new(&self.project.name).size(23.0).strong());
-                let instruction = match self.mode {
-                    Mode::Inspect => "Drag to move the map, or select a zone to edit it.",
-                    Mode::Add => "Click the map where people gather.",
-                    Mode::Move => "Click the new center of this zone.",
-                    Mode::Draw => "Drag a rectangle over the area you want to score.",
-                };
-                ui.label(RichText::new(instruction).color(MUTED));
-                self.map_toolbar(ui);
-                ui.add_space(4.0);
-                ui.horizontal_wrapped(|ui| {
-                    if self.show_stability {
-                        legend(ui, MINT, "Consistently low");
-                        legend(ui, Color32::from_rgb(244, 169, 74), "Uncertain");
-                        legend(
-                            ui,
-                            Color32::from_rgb(81, 135, 169),
-                            "Consistently unselected",
-                        );
-                    } else {
-                        legend(ui, MINT, "Selected low impact");
-                        legend(ui, Color32::from_rgb(221, 112, 89), "Higher impact");
-                    }
-                    legend(ui, LILAC, "Occupied zone");
-                });
-                ui.horizontal(|ui| {
-                    if let Ok(result) = &self.analysis {
-                        let message = if self.project.zones.is_empty() {
-                            "Add a zone to calculate a map.".into()
-                        } else if result.scored_count == 0 {
-                            "No cells meet the model distance limits for all occupied zones.".into()
-                        } else {
-                            format!(
-                                "{} scored cells   ·   {} selected   ·   {:.0} × {:.0} m boundary",
-                                result.scored_count,
-                                result.selected_count,
-                                result.bounds.width(),
-                                result.bounds.height()
-                            )
-                        };
-                        ui.label(RichText::new(message).color(MUTED).size(12.0));
-                    } else if let Err(error) = &self.analysis {
-                        ui.label(RichText::new(error).color(Color32::LIGHT_RED).size(12.0));
-                    }
-                });
-                self.canvas(ui);
-            });
+            .frame(
+                Frame::new()
+                    .fill(visuals.panel_fill)
+                    .inner_margin(Margin::same(24)),
+            )
+            .show(ctx, |ui| self.workspace(ui));
     }
 }
 
-fn add_place_name_font(ctx: &Context) {
-    let candidates = [
-        "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
-        "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
-        "C:/Windows/Fonts/malgun.ttf",
-        "/System/Library/Fonts/AppleSDGothicNeo.ttc",
-    ];
-    if let Some(bytes) = candidates.iter().find_map(|path| std::fs::read(path).ok()) {
-        let mut fonts = egui::FontDefinitions::default();
-        let name = "system place names".to_owned();
-        fonts
-            .font_data
-            .insert(name.clone(), egui::FontData::from_owned(bytes).into());
-        fonts
-            .families
-            .entry(egui::FontFamily::Proportional)
-            .or_default()
-            .push(name);
-        ctx.set_fonts(fonts);
+impl Planner {
+    fn workspace(&mut self, ui: &mut egui::Ui) {
+        let visuals = ui.visuals();
+        let detail_color = muted(visuals);
+        let frame = Frame::new()
+            .fill(visuals.window_fill)
+            .stroke(visuals.widgets.noninteractive.bg_stroke)
+            .corner_radius(12)
+            .inner_margin(Margin::same(12));
+        ui.label(display(&self.project.name, 40.0));
+        let instruction = match self.mode {
+            Mode::Inspect => self.map_summary(),
+            Mode::Add => "Click the map to add an occupied zone.".into(),
+            Mode::Move => "Click the new center of the selected zone.".into(),
+            Mode::Draw => "Drag across the map to set the analysis boundary.".into(),
+        };
+        ui.label(RichText::new(instruction).color(detail_color).size(13.0));
+        ui.add_space(8.0);
+
+        frame.show(ui, |ui| {
+            self.map_toolbar(ui);
+            ui.separator();
+            ui.horizontal_wrapped(|ui| {
+                if self.show_heat && self.show_stability {
+                    legend(ui, LOW_IMPACT, "Consistently low");
+                    legend(ui, Color32::from_rgb(244, 169, 74), "Uncertain");
+                    legend(
+                        ui,
+                        Color32::from_rgb(81, 135, 169),
+                        "Consistently unselected",
+                    );
+                } else if self.show_heat {
+                    legend(ui, LOW_IMPACT, "Selected low impact");
+                    legend(ui, Color32::from_rgb(221, 112, 89), "Higher impact");
+                }
+                legend(ui, ZONE, "Occupied zone");
+            });
+            self.canvas(ui);
+        });
+    }
+
+    fn map_summary(&self) -> String {
+        match &self.analysis {
+            Err(error) => error.clone(),
+            Ok(_) if self.project.zones.is_empty() => "Add a zone to start the analysis.".into(),
+            Ok(analysis) if analysis.scored_count == 0 => {
+                "No cells meet the distance limits for every occupied zone.".into()
+            }
+            Ok(analysis) => format!(
+                "{} scored cells  ·  {} selected  ·  {:.0} × {:.0} m boundary",
+                analysis.scored_count,
+                analysis.selected_count,
+                analysis.bounds.width(),
+                analysis.bounds.height()
+            ),
+        }
     }
 }
 
 fn section(ui: &mut egui::Ui, text: &str) {
-    ui.add_space(3.0);
-    ui.label(RichText::new(text).strong().size(16.0));
+    ui.label(display(text, 19.0));
 }
 
 fn field_label(ui: &mut egui::Ui, text: &str) {
-    ui.label(RichText::new(text).color(MUTED).size(12.0));
+    ui.label(RichText::new(text).color(muted(ui.visuals())).size(12.0));
 }
 
 fn legend(ui: &mut egui::Ui, color: Color32, label: &str) {
     let (rect, _) = ui.allocate_exact_size(Vec2::splat(10.0), Sense::hover());
     ui.painter().rect_filled(rect, 2.0, color);
-    ui.label(RichText::new(label).small().color(MUTED));
+    ui.label(RichText::new(label).small().color(muted(ui.visuals())));
     ui.add_space(6.0);
 }
 
-fn draw_grid(painter: &egui::Painter, view: &View) {
-    let line_color = Color32::from_rgba_unmultiplied(159, 183, 206, 35);
+fn draw_grid(painter: &egui::Painter, view: &View, line_color: Color32) {
     let stroke = Stroke::new(1.0_f32, line_color);
     let span = view.bounds.width().max(view.bounds.height());
     let spacing = 10_f64.powf((span / 18.0).log10().ceil().max(1.0));
@@ -1122,24 +1127,30 @@ fn draw_grid(painter: &egui::Painter, view: &View) {
     }
 }
 
-fn draw_compass(painter: &egui::Painter, canvas: Rect, view: &View) {
+fn draw_compass(
+    painter: &egui::Painter,
+    canvas: Rect,
+    view: &View,
+    background: Color32,
+    foreground: Color32,
+) {
     let n = canvas.right_top() + vec2(-22.0, 23.0);
     painter.rect_filled(
         Rect::from_center_size(n + vec2(0.0, 10.0), vec2(26.0, 46.0)),
         4.0,
-        BACKGROUND,
+        background,
     );
     painter.text(
         n,
         Align2::CENTER_CENTER,
         "N",
         FontId::monospace(12.0),
-        MUTED,
+        foreground,
     );
     painter.arrow(
         n + vec2(0.0, 26.0),
         vec2(0.0, -17.0),
-        Stroke::new(1.5_f32, MUTED),
+        Stroke::new(1.5_f32, foreground),
     );
     let metres = 10_f32.powf((85.0 / view.pixels_per_m).log10().floor());
     let p = canvas.right_bottom() + vec2(-23.0 - metres * view.pixels_per_m, -15.0);
@@ -1149,18 +1160,18 @@ fn draw_compass(painter: &egui::Painter, canvas: Rect, view: &View) {
             vec2((metres * view.pixels_per_m + 12.0).max(44.0), 28.0),
         ),
         4.0,
-        BACKGROUND,
+        background,
     );
     painter.line_segment(
         [p, p + vec2(metres * view.pixels_per_m, 0.0)],
-        Stroke::new(2.0_f32, MUTED),
+        Stroke::new(2.0_f32, foreground),
     );
     painter.text(
         p + vec2(0.0, -4.0),
         Align2::LEFT_BOTTOM,
         format!("{metres:.0} m"),
         FontId::monospace(11.0),
-        MUTED,
+        foreground,
     );
 }
 

@@ -18,7 +18,15 @@ The optional satellite layer is **EOxCloudless by EOX IT Services GmbH (Contains
 
 Street tiles and Photon place search use data from OpenStreetMap contributors. The street display links the contributor attribution. The README street screenshot is a cropped application view with credited OpenStreetMap cartography. VWorld imagery is an optional, separately authenticated service for South Korea. Its tiles remain outside the release and exported maps. [OpenStreetMap attribution](https://www.openstreetmap.org/copyright) · [Tile usage policy](https://operations.osmfoundation.org/policies/tiles/) · [Photon](https://github.com/komoot/photon) · [VWorld](https://www.vworld.kr/)
 
-Dependencies are installed separately from upstream distributions. No dependency source, wheels, fonts or executables are bundled. The package uses the following licenses per installed distribution metadata. The dependency distributions provide definitive license and copyright notices, including upstream bundled components.
+## Desktop fonts
+
+- DM Sans by the DM Sans Project Authors. Regular and Bold are bundled from the upstream export. [Source](https://github.com/googlefonts/dm-fonts/tree/4412393b7d2de9fe7a92064c2dce9b5af5d7fd26/Sans/Exports) · [SIL Open Font License 1.1](planner/fonts/DMSans-OFL.txt).
+- JetBrains Mono by the JetBrains Mono Project Authors. Regular is bundled from version 2.304. [Source](https://github.com/JetBrains/JetBrainsMono/tree/v2.304/fonts/ttf) · [SIL Open Font License 1.1](planner/fonts/JetBrainsMono-OFL.txt).
+- Users can supply a General Sans font file they obtained independently from Fontshare under the ITF Free Font License. [General Sans](https://www.fontshare.com/fonts/general-sans) · [Fontshare license](https://www.fontshare.com/licenses/itf-ffl).
+
+## Python dependencies
+
+Dependencies are installed separately from upstream distributions. Python dependency source, wheels and executables are distributed by their respective upstreams. The package uses the following licenses per installed distribution metadata. The dependency distributions provide definitive license and copyright notices, including upstream bundled components.
 
 | License family | Dependencies |
 |---|---|

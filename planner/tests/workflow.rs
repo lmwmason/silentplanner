@@ -58,6 +58,13 @@ fn georeference_preserves_origin_and_local_orientation() {
 #[test]
 fn demo_has_ranked_cells_and_uses_its_automatic_envelope() {
     let project = Project::demo();
+    assert_eq!(project.origin, Some(Origin::CHUNGBUK_SCIENCE_HIGH_SCHOOL));
+    assert!(
+        project
+            .zones
+            .iter()
+            .all(|zone| zone.label.starts_with("Example "))
+    );
     let analysis = analyze(&project).unwrap();
     assert_eq!(analysis.bounds, project.auto_bounds());
     assert!(analysis.scored_count > analysis.selected_count);

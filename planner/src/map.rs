@@ -145,23 +145,23 @@ impl Default for Project {
 impl Project {
     pub fn demo() -> Self {
         Self {
-            name: "Seoul example site".into(),
-            origin: Some(crate::satellite::Origin::EXAMPLE),
+            name: "Chungbuk Science High School".into(),
+            origin: Some(crate::satellite::Origin::CHUNGBUK_SCIENCE_HIGH_SCHOOL),
             zones: vec![
                 Zone {
-                    label: "Library".into(),
+                    label: "Example A".into(),
                     center: Point::new(-22.0, 14.0),
                     radius_m: 6.0,
                     weight: 1.0,
                 },
                 Zone {
-                    label: "Classrooms".into(),
+                    label: "Example B".into(),
                     center: Point::new(15.0, 19.0),
                     radius_m: 7.0,
                     weight: 0.85,
                 },
                 Zone {
-                    label: "Courtyard".into(),
+                    label: "Example C".into(),
                     center: Point::new(21.0, -16.0),
                     radius_m: 7.0,
                     weight: 0.6,

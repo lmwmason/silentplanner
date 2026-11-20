@@ -22,6 +22,12 @@ pub struct Origin {
 }
 
 impl Origin {
+    /// Public map pin published on the school's official directions page.
+    pub const CHUNGBUK_SCIENCE_HIGH_SCHOOL: Self = Self {
+        latitude: 36.5887931,
+        longitude: 127.5690412,
+    };
+
     pub const EXAMPLE: Self = Self {
         latitude: 37.5665,
         longitude: 126.9780,

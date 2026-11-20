@@ -10,12 +10,22 @@ From the repository root:
 cargo run --locked --manifest-path planner/Cargo.toml --release
 ```
 
-The Linux build uses X11 or Wayland and OpenGL. Native file and folder dialogs use the desktop portal on Linux. Rust 1.100.0 was used for verification. The demo starts with fictional occupied zones in Seoul and shows the streets layer by default so roads and labels are easy to read.
+The Linux build uses X11 or Wayland and OpenGL. Native file and folder dialogs use the desktop portal on Linux. Rust 1.100.0 was used for verification. The demo uses the public map pin for Chungbuk Science High School in Cheongju. The three receiver zones and their sensitivity values are illustrative. The streets layer shows roads and labels by default. [School directions](https://school.cbe.go.kr/cbs-h/M010205/)
 
 1. Under **Find your site**, enter a place name or decimal latitude and longitude, then select a result. Coordinate pairs are parsed locally. An explicit place-name search sends the typed query to the Photon public geocoder. Starting a different site after edits requires confirmation.
 2. Click the map where people gather, or select **Add zone** if you are in pan mode. Click a zone to adjust its radius, name or sensitivity. Choose **Auto area** to fit around the zones or **Draw area** to drag a rectangle.
 3. Switch between **Streets** and **Satellite** at the top of the map. Drag to pan and scroll to zoom, or use the zoom buttons and **Fit area**. Green marks the lowest-scoring fraction of eligible cells. The map stays visible around the colored areas. **Advanced settings** contains model and grid controls.
-4. Select **Export map** to save in `planner-exports/`. The **Project** menu opens a saved project or changes the export folder using a native file picker.
+4. Select **Export map** to save in `planner-exports/`. The **Project** menu opens a saved project, changes the export folder or switches between light and dark appearance.
+
+Use **Ctrl+K** on Windows or Linux and **Command+K** on macOS to focus place search. Press **Escape** to leave a map editing mode.
+
+### Display font
+
+DM Sans and JetBrains Mono ship with the desktop app. To use General Sans for headings, [download General Sans directly from Fontshare](https://www.fontshare.com/fonts/general-sans), extract `GeneralSans-Bold.otf`, and start the app with its path:
+
+```bash
+SILENT_PLANNER_DISPLAY_FONT="/path/to/GeneralSans-Bold.otf" cargo run --locked --manifest-path planner/Cargo.toml --release
+```
 
 ## Files and automation
 
